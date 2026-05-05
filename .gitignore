@@ -1,0 +1,9 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+backend/data/*.csv
+.DS_Store
+*.db
+test_main.http
