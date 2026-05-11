@@ -8,7 +8,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from typing import Optional
 from routers import players, teams, analytics, projections, watchlist
-from debug_route import router as debug_router
 
 app = FastAPI(
     title="PortalIQ",
@@ -29,7 +28,6 @@ app.include_router(teams.router)
 app.include_router(analytics.router)
 app.include_router(projections.router)
 app.include_router(watchlist.router)
-app.include_router(debug_router)
 
 security = HTTPBearer(auto_error=False)
 
