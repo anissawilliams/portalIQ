@@ -1,1 +1,1 @@
-from . import players, teams, analytics, projections
+from . import players, teams, analytics, projections, watchlist
