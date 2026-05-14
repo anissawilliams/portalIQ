@@ -161,3 +161,60 @@ def team_transfers(
         "count": len(df),
         "players": clean(df[cols]).to_dict(orient="records"),
     }
+
+@router.get("/roster/{team}")
+def team_roster(
+    team: str,
+    sport: str = Query(default="football"),
+    season: Optional[int] = None,
+):
+    """
+    Current roster view for a team — most recent portal additions
+    with NIL estimates, position groups, and value scores.
+    Grouped by position for depth chart rendering.
+    """
+    df = get_enriched_transfers()
+
+    # Filter to this team's incoming transfers
+    df = df[df["destination_school"] == team].copy()
+
+    # Use most recent season if not specified
+    if season:
+        df = df[df["season"] == season]
+    else:
+        latest = df["season"].max()
+        df = df[df["season"] == latest]
+
+    # Sort by position group then value score
+    df = df.sort_values(
+        ["pos_group", "position", "transfer_value_score"],
+        ascending=[True, True, False]
+    )
+
+    # Add depth rank within each position
+    df["depth_rank"] = df.groupby("position")["transfer_value_score"] \
+                         .rank(ascending=False, method="first").astype(int)
+
+    cols = [
+        "player_name", "position", "pos_group", "depth_rank",
+        "stars", "rating", "origin_school", "season",
+        "transfer_value_score", "est_player_nil_cost",
+        "is_upgrade", "eligibility",
+    ]
+
+    # Group by position for depth chart
+    roster = clean(df[cols])
+    grouped = {}
+    for pos_group, group in roster.groupby("pos_group"):
+        positions = {}
+        for pos, players in group.groupby("position"):
+            positions[pos] = players.to_dict(orient="records")
+        grouped[pos_group] = positions
+
+    return {
+        "team": team,
+        "season": int(df["season"].iloc[0]) if not df.empty else None,
+        "total_players": len(df),
+        "roster": grouped,
+        "flat": roster.to_dict(orient="records"),
+    }
