@@ -178,7 +178,8 @@ def get_rosters_2026() -> pd.DataFrame:
 
     print(f"  Enriched {len(enriched):,} players across "
           f"{enriched['team'].nunique()} teams")
-    enriched = enriched.where(enriched.notna(), None)
+    # Nuclear NaN sweep — guarantee JSON compliance
+    enriched = enriched.fillna("").replace({float('nan'): None})
     return enriched
 
 
