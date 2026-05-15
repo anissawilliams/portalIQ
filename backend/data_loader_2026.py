@@ -168,13 +168,15 @@ def get_rosters_2026() -> pd.DataFrame:
         teams["team_id_str"] = teams["team_id_str"].astype(str)
         enriched["team_id"] = enriched["team_id"].astype(str)
 
+        teams_merge = teams[["team_id", "color", "alternate_color"]].copy()
+        teams_merge["team_id"] = teams_merge["team_id"].astype(str)
+        enriched["team_id"] = enriched["team_id"].astype(str)
         enriched = enriched.merge(
-            teams[["team_id_str", "color", "alternate_color", "abbreviation"]],
-            left_on="team_id",
-            right_on="team_id_str",
+            teams_merge,
+            on="team_id",
             how="left",
             suffixes=("", "_teams")
-        ).drop(columns=["team_id_str"], errors="ignore")
+        )
 
     print(f"  Enriched {len(enriched):,} players across "
           f"{enriched['team'].nunique()} teams")
