@@ -7,12 +7,12 @@ from fastapi import FastAPI, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from typing import Optional
-from routers import players, teams, analytics, projections, watchlist
+from routers import players, teams, analytics, projections, watchlist, rosters
 
 app = FastAPI(
     title="PortalIQ",
     description="CFB NIL & Transfer Portal Analytics Platform",
-    version="0.2.0",
+    version="0.3.0",
 )
 
 app.add_middleware(
@@ -28,16 +28,29 @@ app.include_router(teams.router)
 app.include_router(analytics.router)
 app.include_router(projections.router)
 app.include_router(watchlist.router)
+app.include_router(rosters.router)   # ← 2026 ESPN roster data
 
 security = HTTPBearer(auto_error=False)
 
+
 @app.get("/")
 def root():
-    return {"product": "PortalIQ", "version": "0.2.0", "status": "running", "docs": "/docs"}
+    return {
+        "product": "PortalIQ",
+        "version": "0.3.0",
+        "status":  "running",
+        "docs":    "/docs",
+        "data": {
+            "portal": "2025 transfer portal (22 players/team)",
+            "rosters": "2026 ESPN full rosters (13,765 players, all FBS)",
+        }
+    }
+
 
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
 
 @app.get("/me")
 def me(credentials: Optional[HTTPAuthorizationCredentials] = Depends(security)):

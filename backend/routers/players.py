@@ -7,7 +7,7 @@ from typing import Optional
 from collections import defaultdict
 import numpy as np
 from data_loader import get_enriched_transfers, get_cbs_2026
-from volatility import score_volatility
+from backend.volatility import score_volatility
 
 router = APIRouter(prefix="/players", tags=["players"])
 
