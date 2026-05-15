@@ -93,7 +93,9 @@ def _enrich_player(row: pd.Series) -> pd.Series:
     pos      = POSITION_MAP.get(str(row.get("position", "")).upper(), row.get("position", "ATH"))
     cls      = str(row.get("class", "Sophomore"))
     #exp      = int(row.get("experience_years") or 1)
-    exp = int(row["experience_years"]) if pd.notna(row.get("experience_years")) else 1
+   # exp = int(row["experience_years"]) if pd.notna(row.get("experience_years")) else 1
+    exp_raw = row.get("experience_years")
+    exp = int(exp_raw) if exp_raw is not None and exp_raw == exp_raw else 1
     base_nil  = POSITION_NIL.get(pos, 55000)
     class_mod = CLASS_NIL_MODIFIER.get(cls, 1.0)
     est_nil   = round(base_nil * class_mod, 0)
