@@ -10,7 +10,7 @@ from fastapi import APIRouter, Query, HTTPException
 from typing import Optional
 from collections import defaultdict
 import numpy as np
-from backend.data_loader_2026 import get_team_roster_2026, get_rosters_2026, get_teams_2026
+from data_loader_2026 import get_team_roster_2026, get_rosters_2026, get_teams_2026
 from volatility import score_volatility
 
 router = APIRouter(prefix="/rosters", tags=["rosters"])
