@@ -8,7 +8,7 @@ Key differences from portal data:
   - Covers ENTIRE roster, not just transfers
   - Has class year (FR/SO/JR/SR) — critical for volatility
   - Has real headshots from ESPN CDN
-  - Has real team colors via teams_2026.csv join
+  - Has real team colors via teams_2026_clean.csv join
   - Has experience_years — how long in program
 """
 
@@ -148,8 +148,8 @@ def get_rosters_2026() -> pd.DataFrame:
     Load and enrich the full 2026 FBS roster.
     Cached after first load — fast on subsequent calls.
     """
-    roster_path = DATA_DIR / "cfb_rosters_2026.csv"
-    teams_path  = DATA_DIR / "teams_2026.csv"
+    roster_path = DATA_DIR / "cfb_rosters_2026_clean.csv"
+    teams_path  = DATA_DIR / "teams_2026_clean.csv"
 
     if not roster_path.exists():
         raise FileNotFoundError(f"Roster file not found: {roster_path}")
@@ -208,7 +208,7 @@ def get_team_roster_2026(team_name: str) -> pd.DataFrame:
 
 def get_teams_2026() -> pd.DataFrame:
     """Get all teams with colors and metadata."""
-    teams_path = DATA_DIR / "teams_2026.csv"
+    teams_path = DATA_DIR / "teams_2026_clean.csv"
     if not teams_path.exists():
         raise FileNotFoundError(f"Teams file not found: {teams_path}")
     df = pd.read_csv(teams_path, sep="\t")

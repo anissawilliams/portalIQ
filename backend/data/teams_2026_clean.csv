@@ -1,0 +1,149 @@
+abbreviation,alternate_color,color,display_name,guid,is_active,location,name,nickname,short_name,team_id,uid
+AUB,f26522,002b5c,Auburn Tigers,6a581b24-2e59-a315-6f91-e85d722f4e9f,True,Auburn,Tigers,Auburn,Auburn,2,s:20~l:23~t:2
+UAB,fdb913,1a5632,UAB Blazers,eaa0d4dc-a0ef-2faa-6c5d-ee4326bf5857,True,UAB,Blazers,UAB,UAB,5,s:20~l:23~t:5
+USA,bf0d3e,00205b,South Alabama Jaguars,9b9a3d1f-6d57-0dd0-9173-ecc56f34075e,True,South Alabama,Jaguars,South Alabama,South Alabama,6,s:20~l:23~t:6
+ARK,ffffff,a32136,Arkansas Razorbacks,10e2d279-fb50-0b76-ba89-3dbe9d43fa2f,True,Arkansas,Razorbacks,Arkansas,Arkansas,8,s:20~l:23~t:8
+ASU,8c1d40,ffc627,Arizona State Sun Devils,d60a0d84-8fa8-2bdf-13ec-fb0f9deda94c,True,Arizona State,Sun Devils,Arizona St,Arizona St,9,s:20~l:23~t:9
+ARIZ,003366,cc0033,Arizona Wildcats,5a61563b-c845-e697-bc8a-231ce180e0e3,True,Arizona,Wildcats,Arizona,Arizona,12,s:20~l:23~t:12
+SAC,cdb97d,00573C,Sacramento State Hornets,2bcff5f8-a7ac-73b2-b5ff-dfbef2fa679c,True,Sacramento State,Hornets,Sacramento St,Sacramento St,16,s:20~l:23~t:16
+SDSU,000000,a6192e,San Diego State Aztecs,9947474f-7dd9-968b-c95d-bcc11800bdcd,True,San Diego State,Aztecs,San Diego St,San Diego St,21,s:20~l:23~t:21
+SJSU,ffb81a,0038a8,San José State Spartans,c9c00b13-c5de-9db2-8e27-7ed43d9a5c9a,True,San José State,Spartans,San José St,San José St,23,s:20~l:23~t:23
+STAN,ffffff,8c1515,Stanford Cardinal,f74a44c4-7492-7a6e-34fe-ab14da6d7f2a,True,Stanford,Cardinal,Stanford,Stanford,24,s:20~l:23~t:24
+CAL,ffc72c,041e42,California Golden Bears,bc456bd2-12dc-1f16-79d5-da8899277a32,True,California,Golden Bears,California,California,25,s:20~l:23~t:25
+UCLA,f2a900,2774ae,UCLA Bruins,426a47d7-bf9e-2d90-af84-6533b43957e0,True,UCLA,Bruins,UCLA,UCLA,26,s:20~l:23~t:26
+USC,ffc72c,9d2235,USC Trojans,63d7a1b4-ee19-f0ae-33c5-42a14e000fb8,True,USC,Trojans,USC,USC,30,s:20~l:23~t:30
+CSU,c8c372,004c23,Colorado State Rams,0a69e6dc-71b5-57a3-7254-341426f50c2f,True,Colorado State,Rams,Colorado St,Colorado St,36,s:20~l:23~t:36
+COLO,000000,cfb87c,Colorado Buffaloes,78bdee7f-11f2-3bf9-f93e-a8e3831c2792,True,Colorado,Buffaloes,Colorado,Colorado,38,s:20~l:23~t:38
+CONN,a2aaad,0c2340,UConn Huskies,61fe4cfc-4b1e-a550-c0a4-818e3897b943,True,UConn,Huskies,UConn,UConn,41,s:20~l:23~t:41
+DEL,ffd200,00539f,Delaware Blue Hens,ea0ddc3a-a03e-1891-039e-46cb06e589f9,True,Delaware,Blue Hens,Delaware,Delaware,48,s:20~l:23~t:48
+FSU,ceb888,782f40,Florida State Seminoles,fa181128-4809-a209-1add-d5a3b0cefd3c,True,Florida State,Seminoles,Florida St,Florida St,52,s:20~l:23~t:52
+JVST,000000,cc0000,Jacksonville State Gamecocks,36b3d085-7d2b-1dbe-4f3b-404354883093,True,Jacksonville State,Gamecocks,Jax State,Jax State,55,s:20~l:23~t:55
+FLA,fa4616,0021a5,Florida Gators,fe74bfd9-c15e-7b3a-ab25-ff4e5636282e,True,Florida,Gators,Florida,Florida,57,s:20~l:23~t:57
+USF,cfc493,006747,South Florida Bulls,ffff063f-c8a9-7bd0-d414-93464f5b4ce0,True,South Florida,Bulls,South Florida,South Florida,58,s:20~l:23~t:58
+GT,ffffff,b3a369,Georgia Tech Yellow Jackets,e2e3ae48-f880-5489-0628-b2286d0adca1,True,Georgia Tech,Yellow Jackets,Georgia Tech,Georgia Tech,59,s:20~l:23~t:59
+UGA,2c2a29,ba0c2f,Georgia Bulldogs,4351fef8-fe69-53b1-ea57-72684b36ec35,True,Georgia,Bulldogs,Georgia,Georgia,61,s:20~l:23~t:61
+HAW,000000,005737,Hawai'i Rainbow Warriors,d50009ca-5143-9322-d577-17d7115a6c54,True,Hawai'i,Rainbow Warriors,Hawai'i,Hawai'i,62,s:20~l:23~t:62
+ISU,ffc72a,ae192d,Iowa State Cyclones,98f92ad4-696c-890b-02e0-f7609d89e38c,True,Iowa State,Cyclones,Iowa State,Iowa State,66,s:20~l:23~t:66
+BOIS,d64309,0033a0,Boise State Broncos,ef2be04b-491c-0b6d-e4d9-1fbf2ab5cbca,True,Boise State,Broncos,Boise St,Boise St,68,s:20~l:23~t:68
+NU,ffffff,492f92,Northwestern Wildcats,ca8359bf-52ca-f069-b9c4-bbfbcfc15c64,True,Northwestern,Wildcats,Northwestern,Northwestern,77,s:20~l:23~t:77
+IU,ffffff,970310,Indiana Hoosiers,bd06efe1-3050-2356-37c1-4b3fef1c29be,True,Indiana,Hoosiers,Indiana,Indiana,84,s:20~l:23~t:84
+ND,c99700,062340,Notre Dame Fighting Irish,ebc2999c-2ff4-8435-ca46-9641e9f9ea10,True,Notre Dame,Fighting Irish,Notre Dame,Notre Dame,87,s:20~l:23~t:87
+UK,ffffff,0033a0,Kentucky Wildcats,d5ec1329-3c7b-93e8-6f57-982c4f33ea75,True,Kentucky,Wildcats,Kentucky,Kentucky,96,s:20~l:23~t:96
+LOU,ffffff,c9001f,Louisville Cardinals,0584f11f-3e1c-d2ac-b852-35a74216c53e,True,Louisville,Cardinals,Louisville,Louisville,97,s:20~l:23~t:97
+WKU,ffffff,e13a3e,Western Kentucky Hilltoppers,c040b0cf-ecec-ea8d-c2c6-e32eaf01fec9,True,Western Kentucky,Hilltoppers,Western KY,Western KY,98,s:20~l:23~t:98
+LSU,fdd023,461d76,LSU Tigers,b9a22bd6-7449-92bc-0e95-a6d8da673b3e,True,LSU,Tigers,LSU,LSU,99,s:20~l:23~t:99
+BC,dbcca6,8c2232,Boston College Eagles,4abb970f-c9e6-7576-3daa-703957b91293,True,Boston College,Eagles,Boston College,Boston College,103,s:20~l:23~t:103
+MASS,ffffff,881c1c,Massachusetts Minutemen,50c83446-93c9-1e06-72cb-e90a185624b8,True,Massachusetts,Minutemen,UMass,UMass,113,s:20~l:23~t:113
+MD,ffffff,ce1126,Maryland Terrapins,7dae6b2a-7a04-6d4d-6e35-a625805c6c0a,True,Maryland,Terrapins,Maryland,Maryland,120,s:20~l:23~t:120
+MSU,ffffff,173f35,Michigan State Spartans,832ac71d-f1e2-6069-3386-0251865c339e,True,Michigan State,Spartans,Michigan St,Michigan St,127,s:20~l:23~t:127
+MICH,ffcb05,00274c,Michigan Wolverines,ea1660a4-aeb8-b9da-7d9f-fcd70d3a0162,True,Michigan,Wolverines,Michigan,Michigan,130,s:20~l:23~t:130
+MINN,fab41c,5e0a2f,Minnesota Golden Gophers,8389ae8e-d0ed-c4e5-b903-fcc01fc30fc2,True,Minnesota,Golden Gophers,Minnesota,Minnesota,135,s:20~l:23~t:135
+MIZ,000000,f1b82d,Missouri Tigers,6bbe4a57-263d-12b2-639a-f1db99afcac9,True,Missouri,Tigers,Missouri,Missouri,142,s:20~l:23~t:142
+MISS,cf142b,13294b,Ole Miss Rebels,f6196074-c394-4821-7b0b-c4271d9467de,True,Ole Miss,Rebels,Ole Miss,Ole Miss,145,s:20~l:23~t:145
+DUKE,ffffff,00539b,Duke Blue Devils,33423e84-1594-6373-1025-20cdd256c421,True,Duke,Blue Devils,Duke,Duke,150,s:20~l:23~t:150
+ECU,ffc72c,582c83,East Carolina Pirates,d42cb6f4-41d2-e072-0b54-e6d123a92654,True,East Carolina,Pirates,East Carolina,East Carolina,151,s:20~l:23~t:151
+NCSU,ffffff,cc0000,NC State Wolfpack,1a66a197-258b-8ac5-56f9-6f4b6ec4d4ed,True,NC State,Wolfpack,NC State,NC State,152,s:20~l:23~t:152
+UNC,13294b,7bafd4,North Carolina Tar Heels,30776972-a2c7-1cf2-4530-1c3820f5a4ea,True,North Carolina,Tar Heels,North Carolina,North Carolina,153,s:20~l:23~t:153
+WAKE,2c2a29,ceb888,Wake Forest Demon Deacons,f6a988be-475f-6cad-3569-47b6803c25cb,True,Wake Forest,Demon Deacons,Wake Forest,Wake Forest,154,s:20~l:23~t:154
+NEB,ffffff,e31937,Nebraska Cornhuskers,e9635416-dfc2-d9d6-ff1c-3e0f70ab2d8c,True,Nebraska,Cornhuskers,Nebraska,Nebraska,158,s:20~l:23~t:158
+RUTG,ffffff,ce0e2d,Rutgers Scarlet Knights,3f06733d-8d8a-7044-6b24-e0ba817e25f0,True,Rutgers,Scarlet Knights,Rutgers,Rutgers,164,s:20~l:23~t:164
+NMSU,231f20,7e141b,New Mexico State Aggies,e644e31c-a675-ce91-6e4a-78269c5b718a,True,New Mexico State,Aggies,New Mexico St,New Mexico St,166,s:20~l:23~t:166
+UNM,a7a8aa,ba0c2f,New Mexico Lobos,a35083ab-ed9e-a3f2-be14-f7958c2b6655,True,New Mexico,Lobos,New Mexico,New Mexico,167,s:20~l:23~t:167
+SYR,ff431b,000e54,Syracuse Orange,8a53c7d6-5f95-d1c0-ed4e-374f53b04443,True,Syracuse,Orange,Syracuse,Syracuse,183,s:20~l:23~t:183
+BGSU,4f2c1d,fd5000,Bowling Green Falcons,bd2c9085-0c46-7f7d-4b18-8ee8ae1bf970,True,Bowling Green,Falcons,Bowling Green,Bowling Green,189,s:20~l:23~t:189
+M-OH,ffffff,c41230,Miami (OH) RedHawks,4602583d-e1f5-2bad-c785-37bb45e2406b,True,Miami (OH),RedHawks,Miami OH,Miami OH,193,s:20~l:23~t:193
+OSU,a8adb4,ba0c2f,Ohio State Buckeyes,2fc3b71f-8247-22a5-f6da-df3902cbb438,True,Ohio State,Buckeyes,Ohio State,Ohio State,194,s:20~l:23~t:194
+OHIO,ffffff,154734,Ohio Bobcats,eb84d343-74ae-03e0-bff8-6c19b5b917e6,True,Ohio,Bobcats,Ohio,Ohio,195,s:20~l:23~t:195
+OKST,000000,fe5c00,Oklahoma State Cowboys,556bcca7-0c38-f441-d76f-13bf46ff4042,True,Oklahoma State,Cowboys,Oklahoma St,Oklahoma St,197,s:20~l:23~t:197
+OU,ffffff,990000,Oklahoma Sooners,67d60bca-1b6b-8d78-81ae-6889e883bb96,True,Oklahoma,Sooners,Oklahoma,Oklahoma,201,s:20~l:23~t:201
+TLSA,d0b787,003595,Tulsa Golden Hurricane,d4483de2-dfde-d0e7-9cca-63ecf8f72f4d,True,Tulsa,Golden Hurricane,Tulsa,Tulsa,202,s:20~l:23~t:202
+ORST,000000,dc4405,Oregon State Beavers,b6d75880-f28e-7a53-ae8a-bef390847086,True,Oregon State,Beavers,Oregon St,Oregon St,204,s:20~l:23~t:204
+PSU,ffffff,061440,Penn State Nittany Lions,899b6845-67a4-16b2-c4a6-2406312be7fc,True,Penn State,Nittany Lions,Penn State,Penn State,213,s:20~l:23~t:213
+TEM,ffffff,a41e35,Temple Owls,4fa12e74-d34d-ac36-c5ed-49486b795781,True,Temple,Owls,Temple,Temple,218,s:20~l:23~t:218
+PITT,ffb81c,003594,Pittsburgh Panthers,f09e85bd-989f-dcff-53ac-0feda69b8959,True,Pittsburgh,Panthers,Pitt,Pitt,221,s:20~l:23~t:221
+CLEM,ffffff,f56600,Clemson Tigers,02382072-a5a3-24ff-6bd1-422a029bd33c,True,Clemson,Tigers,Clemson,Clemson,228,s:20~l:23~t:228
+MEM,8e908f,004991,Memphis Tigers,29a2a6b5-5874-ac84-39e4-b5ab605e7449,True,Memphis,Tigers,Memphis,Memphis,235,s:20~l:23~t:235
+VAN,cfae70,000000,Vanderbilt Commodores,f2c5bf52-4c7d-78ea-ce4d-6a91faee67c8,True,Vanderbilt,Commodores,Vanderbilt,Vanderbilt,238,s:20~l:23~t:238
+BAY,ffb81c,154734,Baylor Bears,f09699d9-0894-3cf9-c5e4-cb392dfb72b8,True,Baylor,Bears,Baylor,Baylor,239,s:20~l:23~t:239
+RICE,c1c6c8,00205b,Rice Owls,beb7c712-ded6-12a7-5f70-86c7344e288d,True,Rice,Owls,Rice,Rice,242,s:20~l:23~t:242
+TA&M,ffffff,500000,Texas A&M Aggies,014788cd-231c-e33e-32c3-7e8d9a1e530f,True,Texas A&M,Aggies,Texas A&M,Texas A&M,245,s:20~l:23~t:245
+HOU,ffffff,c8102e,Houston Cougars,508c397e-91bb-ed5c-a21c-d8faf8726265,True,Houston,Cougars,Houston,Houston,248,s:20~l:23~t:248
+UNT,ffffff,068f33,North Texas Mean Green,f27efab6-fcbe-7d0b-b71c-b06f0e56ecb8,True,North Texas,Mean Green,North Texas,North Texas,249,s:20~l:23~t:249
+TEX,ffffff,af5c37,Texas Longhorns,013a8bab-0dd5-f6a0-45e6-1128a124f34b,True,Texas,Longhorns,Texas,Texas,251,s:20~l:23~t:251
+BYU,002e5d,0047ba,BYU Cougars,fd2097de-a7e2-47ee-cc8a-e215a2b104c4,True,BYU,Cougars,BYU,BYU,252,s:20~l:23~t:252
+UTAH,ffffff,be0000,Utah Utes,8dbdf443-6ffa-7a66-b58f-c0a7484ead29,True,Utah,Utes,Utah,Utah,254,s:20~l:23~t:254
+JMU,cbb677,450084,James Madison Dukes,d3179876-bd5b-83af-e4d7-e4aebd383f15,True,James Madison,Dukes,James Madison,James Madison,256,s:20~l:23~t:256
+UVA,232d4b,f84c1e,Virginia Cavaliers,b5c648b5-0b1f-ba55-a77e-8150a1869d4c,True,Virginia,Cavaliers,Virginia,Virginia,258,s:20~l:23~t:258
+VT,cf4520,6a2c3e,Virginia Tech Hokies,806d08d1-ce5a-ee00-17c4-6eb1b1b3561d,True,Virginia Tech,Hokies,Virginia Tech,Virginia Tech,259,s:20~l:23~t:259
+WASH,e8d3a2,33006f,Washington Huskies,0c6752e3-aae3-f2c1-32c6-79b79425f9cc,True,Washington,Huskies,Washington,Washington,264,s:20~l:23~t:264
+WSU,4d4d4d,a60f2d,Washington State Cougars,9514bdb8-6e1e-c7ca-4e29-aec887a42ae9,True,Washington State,Cougars,Washington St,Washington St,265,s:20~l:23~t:265
+WIS,ffffff,a00000,Wisconsin Badgers,79b14620-600c-7c79-3fb4-b62ed2a45ca0,True,Wisconsin,Badgers,Wisconsin,Wisconsin,275,s:20~l:23~t:275
+MRSH,000000,00b140,Marshall Thundering Herd,49112ca5-090e-1d1a-bbc9-a43086cc0d6a,True,Marshall,Thundering Herd,Marshall,Marshall,276,s:20~l:23~t:276
+WVU,002855,eaaa00,West Virginia Mountaineers,e5ca2c6f-2389-9da3-43cd-995fad2e06c5,True,West Virginia,Mountaineers,West Virginia,West Virginia,277,s:20~l:23~t:277
+FRES,13284c,b1102b,Fresno State Bulldogs,2b421a62-df9b-86de-966c-52070634c8d2,True,Fresno State,Bulldogs,Fresno St,Fresno St,278,s:20~l:23~t:278
+GASO,a3aaae,041e42,Georgia Southern Eagles,23f25349-b9d6-0c18-5bc9-0b452cd006b6,True,Georgia Southern,Eagles,GA Southern,GA Southern,290,s:20~l:23~t:290
+ODU,a1d2f1,003768,Old Dominion Monarchs,fd3c53f2-7889-13ac-2f21-2e8960b7c2aa,True,Old Dominion,Monarchs,Old Dominion,Old Dominion,295,s:20~l:23~t:295
+UL,000000,ce181e,Louisiana Ragin' Cajuns,949cb228-b61b-3d98-8989-ab5fb86a5328,True,Louisiana,Ragin' Cajuns,Louisiana,Louisiana,309,s:20~l:23~t:309
+CCU,a27752,006f71,Coastal Carolina Chanticleers,f4cf84a1-2a65-4f6d-57da-990e3b12ab94,True,Coastal Carolina,Chanticleers,Coastal,Coastal,324,s:20~l:23~t:324
+TXST,6a5638,501214,Texas State Bobcats,c04c2f71-2724-9b62-6b26-830fe8438151,True,Texas State,Bobcats,Texas St,Texas St,326,s:20~l:23~t:326
+USU,ffffff,0f2439,Utah State Aggies,fa41bd5d-d79b-2fd4-e61e-78b7463de8e1,True,Utah State,Aggies,Utah State,Utah State,328,s:20~l:23~t:328
+ALA,ffffff,9e1b32,Alabama Crimson Tide,258022c1-fed4-a0ce-c017-1f853c81d1a8,True,Alabama,Crimson Tide,Alabama,Alabama,333,s:20~l:23~t:333
+KENN,0b1315,fdbb30,Kennesaw State Owls,42a09b71-db38-d5e6-05f8-36a343711210,True,Kennesaw State,Owls,Kennesaw St,Kennesaw St,338,s:20~l:23~t:338
+MSST,c1c6c8,5d1725,Mississippi State Bulldogs,44572c3a-e43a-0e8e-e71e-bf3c48784923,True,Mississippi State,Bulldogs,Mississippi St,Mississippi St,344,s:20~l:23~t:344
+ARMY,d3bc8d,000000,Army Black Knights,4ee86128-e7c4-fc44-0ef7-9d39671f35cb,True,Army,Black Knights,Army,Army,349,s:20~l:23~t:349
+ILL,13294b,ff5f05,Illinois Fighting Illini,4ce2ebbc-45db-ed4d-a525-c3de0b375e88,True,Illinois,Fighting Illini,Illinois,Illinois,356,s:20~l:23~t:356
+AFA,ffffff,003594,Air Force Falcons,cc5175c1-38c8-8a98-39ad-99b2201c7db7,True,Air Force,Falcons,Air Force,Air Force,2005,s:20~l:23~t:2005
+AKR,c5b783,041e42,Akron Zips,c14c4165-7146-d53b-d109-869e4bf4be3e,True,Akron,Zips,Akron,Akron,2006,s:20~l:23~t:2006
+APP,ffcd00,000000,App State Mountaineers,7c2e9ccb-d483-2267-286a-af74e5c83036,True,App State,Mountaineers,App State,App State,2026,s:20~l:23~t:2026
+ARST,000000,cc092f,Arkansas State Red Wolves,27f770e6-1ed5-9f3e-a8d6-23fda9831def,True,Arkansas State,Red Wolves,Arkansas St,Arkansas St,2032,s:20~l:23~t:2032
+BALL,ffffff,ba0c2f,Ball State Cardinals,536d28d5-5784-9129-f8d7-840bd213f260,True,Ball State,Cardinals,Ball State,Ball State,2050,s:20~l:23~t:2050
+BUFF,ffffff,005bbb,Buffalo Bulls,14456181-a940-8b49-a48e-7fb74a4b5d65,True,Buffalo,Bulls,Buffalo,Buffalo,2084,s:20~l:23~t:2084
+UCF,b4a169,000000,UCF Knights,c9803f48-33e7-2ff2-03ef-ca6c319e1787,True,UCF,Knights,UCF,UCF,2116,s:20~l:23~t:2116
+CMU,fbab18,4c0027,Central Michigan Chippewas,201fb3b5-80d2-96f0-8692-a4cbfa5768e6,True,Central Michigan,Chippewas,C Michigan,C Michigan,2117,s:20~l:23~t:2117
+CIN,e00122,000000,Cincinnati Bearcats,8e2c392d-d2c3-6a0f-2870-6a4487fc967f,True,Cincinnati,Bearcats,Cincinnati,Cincinnati,2132,s:20~l:23~t:2132
+EMU,ffffff,006938,Eastern Michigan Eagles,4fe149bf-abf3-1485-0582-3927ec0a6068,True,Eastern Michigan,Eagles,E Michigan,E Michigan,2199,s:20~l:23~t:2199
+FAU,cc0000,003366,Florida Atlantic Owls,87a34b7e-ceeb-2909-37c5-90c59fcc4deb,True,Florida Atlantic,Owls,FAU,FAU,2226,s:20~l:23~t:2226
+FIU,c3993f,091f3f,Florida International Panthers,49b4cf79-4f17-4102-6ce7-d432bc46041b,True,Florida International,Panthers,FIU,FIU,2229,s:20~l:23~t:2229
+GAST,ffffff,0039a6,Georgia State Panthers,729c7315-1812-052c-1123-f44cf21b435c,True,Georgia State,Panthers,Georgia St,Georgia St,2247,s:20~l:23~t:2247
+IOWA,fcd116,231f20,Iowa Hawkeyes,dbe71bf8-160a-45af-c855-b444d68fbe76,True,Iowa,Hawkeyes,Iowa,Iowa,2294,s:20~l:23~t:2294
+KU,e8000d,0051ba,Kansas Jayhawks,ef1f570d-de44-06af-a61e-5f4ec79fa11f,True,Kansas,Jayhawks,Kansas,Kansas,2305,s:20~l:23~t:2305
+KSU,e2e3e4,330a57,Kansas State Wildcats,b82ceb2c-b0bc-16f8-4cdb-d038df734db4,True,Kansas State,Wildcats,Kansas St,Kansas St,2306,s:20~l:23~t:2306
+KENT,eaab00,002664,Kent State Golden Flashes,fc40f1a0-dec2-2c11-7e0a-ad793f6ab9e9,True,Kent State,Golden Flashes,Kent State,Kent State,2309,s:20~l:23~t:2309
+LIB,b72025,0a254e,Liberty Flames,fb2a277f-feda-6d2f-cc06-5ac1962c3c98,True,Liberty,Flames,Liberty,Liberty,2335,s:20~l:23~t:2335
+LT,cb333b,003087,Louisiana Tech Bulldogs,fcf528e0-e753-a985-c2f8-1137335b071e,True,Louisiana Tech,Bulldogs,Louisiana Tech,Louisiana Tech,2348,s:20~l:23~t:2348
+MIA,035131,f47423,Miami Hurricanes,2b3657a5-caae-31a2-899a-0d09df0f7bed,True,Miami,Hurricanes,Miami,Miami,2390,s:20~l:23~t:2390
+MTSU,ffffff,036eb7,Middle Tennessee Blue Raiders,12300c00-1093-0f17-95b2-26591412fdd3,True,Middle Tennessee,Blue Raiders,MTSU,MTSU,2393,s:20~l:23~t:2393
+NAVY,b5a67c,00225b,Navy Midshipmen,6d79fd87-3903-89aa-8028-da81638e6989,True,Navy,Midshipmen,Navy,Navy,2426,s:20~l:23~t:2426
+CLT,a49665,005035,Charlotte 49ers,93f647dd-6cbb-7dac-b43a-b478f7acef9b,True,Charlotte,49ers,Charlotte,Charlotte,2429,s:20~l:23~t:2429
+ULM,fdb913,840029,UL Monroe Warhawks,4d57923d-7bd8-b4d2-1f96-8af3dc50127f,True,UL Monroe,Warhawks,UL Monroe,UL Monroe,2433,s:20~l:23~t:2433
+UNLV,cac8c8,cf0a2c,UNLV Rebels,1f3dbbad-f63b-a967-e511-b8c7464a9c5f,True,UNLV,Rebels,UNLV,UNLV,2439,s:20~l:23~t:2439
+NEV,8a8d8f,041e42,Nevada Wolf Pack,ed53380d-a53d-08d0-d5a4-53e0d61561eb,True,Nevada,Wolf Pack,Nevada,Nevada,2440,s:20~l:23~t:2440
+NDSU,ffffff,01402A,North Dakota State Bison,1ea4925c-7fb3-b48b-60c4-ed969feb6a1c,True,North Dakota State,Bison,N Dakota St,N Dakota St,2449,s:20~l:23~t:2449
+NIU,000000,c8102e,Northern Illinois Huskies,69426e61-b945-05b3-175a-f5116c139508,True,Northern Illinois,Huskies,N Illinois,N Illinois,2459,s:20~l:23~t:2459
+ORE,fff41b,00934b,Oregon Ducks,116d333f-cf1a-0c67-d450-36a834af56de,True,Oregon,Ducks,Oregon,Oregon,2483,s:20~l:23~t:2483
+PUR,000000,ceb888,Purdue Boilermakers,1f5f7b3a-6fac-b606-8dbe-3664c2d38f6b,True,Purdue,Boilermakers,Purdue,Purdue,2509,s:20~l:23~t:2509
+SHSU,ffffff,f56423,Sam Houston Bearkats,a0a4a10c-110e-d1f6-219c-d73de4944378,True,Sam Houston,Bearkats,Sam Houston,Sam Houston,2534,s:20~l:23~t:2534
+SMU,0033a1,a80000,SMU Mustangs,1ca864c9-0072-57e4-6fbf-d333f53e4409,True,SMU,Mustangs,SMU,SMU,2567,s:20~l:23~t:2567
+USM,231f20,ffc72c,Southern Miss Golden Eagles,473ac550-dff2-5fe8-0182-5141a48397e0,True,Southern Miss,Golden Eagles,Southern Miss,Southern Miss,2572,s:20~l:23~t:2572
+SC,000000,73000a,South Carolina Gamecocks,6509690a-8cf2-b255-5af7-b6a1a1010ac4,True,South Carolina,Gamecocks,South Carolina,South Carolina,2579,s:20~l:23~t:2579
+MOST,ffffff,5e0009,Missouri State Bears,c015a92b-9a44-a2d3-59da-a0e275d9b7e9,True,Missouri State,Bears,Missouri St,Missouri St,2623,s:20~l:23~t:2623
+TCU,ffffff,4d1979,TCU Horned Frogs,f46ccf4d-1031-4373-2a4b-bc8b3ad9ba97,True,TCU,Horned Frogs,TCU,TCU,2628,s:20~l:23~t:2628
+TENN,ffffff,ff8200,Tennessee Volunteers,de276cc4-dc02-159f-0c1c-67ddaf02a9ea,True,Tennessee,Volunteers,Tennessee,Tennessee,2633,s:20~l:23~t:2633
+UTSA,f15a22,0c2340,UTSA Roadrunners,43f30dfa-e0d9-ad12-1cb6-f8ceae32ffb4,True,UTSA,Roadrunners,UTSA,UTSA,2636,s:20~l:23~t:2636
+UTEP,041e42,ff8200,UTEP Miners,20cb6c64-58b0-6c86-56f9-c86672e59106,True,UTEP,Miners,UTEP,UTEP,2638,s:20~l:23~t:2638
+TTU,000000,da291c,Texas Tech Red Raiders,4350bc91-1a0d-8292-bf66-9687147703f0,True,Texas Tech,Red Raiders,Texas Tech,Texas Tech,2641,s:20~l:23~t:2641
+TOL,ffcd00,0b2240,Toledo Rockets,fa2515be-1435-f76e-381c-1bde51bb4a64,True,Toledo,Rockets,Toledo,Toledo,2649,s:20~l:23~t:2649
+TROY,b1b1b1,862633,Troy Trojans,f3be554b-73fd-2c7c-912f-b494b05c7c47,True,Troy,Trojans,Troy,Troy,2653,s:20~l:23~t:2653
+TULN,418fde,006747,Tulane Green Wave,523d67cf-ee6a-4fb9-8dd4-44fd6a3a1115,True,Tulane,Green Wave,Tulane,Tulane,2655,s:20~l:23~t:2655
+WMU,f1c500,532e1f,Western Michigan Broncos,dc3e4fdc-c679-36f9-323c-75330c120fed,True,Western Michigan,Broncos,W Michigan,W Michigan,2711,s:20~l:23~t:2711
+WYO,ffc425,492f24,Wyoming Cowboys,da12224c-5cfe-470b-a0c3-a2df7b134a8f,True,Wyoming,Cowboys,Wyoming,Wyoming,2751,s:20~l:23~t:2751
+SOU,ffffff,000000,SOUTH All-Stars,,True,SOUTH,All-Stars,SOUTH,SOUTH,3144,s:20~l:23~t:3144
+NOR,ffffff,000000,NORTH All-Stars,,True,NORTH,All-Stars,NORTH,NORTH,3145,s:20~l:23~t:3145
+EAST,ffffff,000000,East All-Stars,,True,East,All-Stars,East,East,3146,s:20~l:23~t:3146
+WEST,ffffff,000000,West All-Stars,,True,West,All-Stars,West,West,3147,s:20~l:23~t:3147
+AMER,ffffff,000000,American,8cb23378-2e5d-4cd8-b917-0f09310d0250,True,American,,American,American,3193,s:20~l:23~t:3193
+NAT,ffffff,000000,National,,True,National,,National,National,3194,s:20~l:23~t:3194
+UNF,ffffff,000000,NORTH FLORIDA STARS,,True,NORTH FLORIDA,STARS,NORTH FLORIDA,NORTH FLORIDA,3197,s:20~l:23~t:3197
+SFX,ffffff,000000,SOUTH FLORIDA STARS,,True,SOUTH FLORIDA,STARS,SOUTH FLORIDA,SOUTH FLORIDA,3198,s:20~l:23~t:3198
+GAIT,ffffff,333333,Team Gaither,,False,Team Gaither,,Team Gaither,Team Gaither,125290,s:20~l:23~t:125290
+ROB,ffffff,333333,Team Robinson,,False,Team Robinson,,Team Robinson,Team Robinson,125291,s:20~l:23~t:125291
