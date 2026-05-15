@@ -161,22 +161,19 @@ def get_rosters_2026() -> pd.DataFrame:
     # Enrich each player
     enriched = df.apply(_enrich_player, axis=1)
 
-    # Join team colors/logos if teams file exists
+    # Join team colors if available
     if teams_path.exists():
-        teams = pd.read_csv(teams_path, sep="\t")
-        teams = teams.rename(columns={"team_id": "team_id_str"})
-        teams["team_id_str"] = teams["team_id_str"].astype(str)
-        enriched["team_id"] = enriched["team_id"].astype(str)
-
-        teams_merge = teams[["team_id", "color", "alternate_color"]].copy()
-        teams_merge["team_id"] = teams_merge["team_id"].astype(str)
-        enriched["team_id"] = enriched["team_id"].astype(str)
-        enriched = enriched.merge(
-            teams_merge,
-            on="team_id",
-            how="left",
-            suffixes=("", "_teams")
-        )
+        try:
+            teams = pd.read_csv(teams_path)
+            teams["team_id"] = teams["team_id"].astype(str)
+            enriched["team_id"] = enriched["team_id"].astype(str)
+            enriched = enriched.merge(
+                teams[["team_id", "color", "alternate_color"]],
+                on="team_id",
+                how="left"
+            )
+        except Exception as e:
+            print(f"  Warning: teams join failed ({e}) — continuing without colors")
 
     print(f"  Enriched {len(enriched):,} players across "
           f"{enriched['team'].nunique()} teams")
