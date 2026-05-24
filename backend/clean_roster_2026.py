@@ -30,6 +30,7 @@ FUZZY_THRESHOLD = 88
 MANUAL_EXCLUSIONS = {
     "Florida State": [
         "Tommy Castellanos",
+        "Gavin Blackwell"
     ],
 }
 
