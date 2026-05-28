@@ -220,7 +220,7 @@ def main():
         inserted += len(batch)
         print(f"  {inserted} / {len(records)}", end="\r")
 
-    print(f"\n  Done — {len(records)} schools upserted")
+    print(f"\n  Done — {len(records)} spchools upserted")
 
     # Verify
     resp = supabase.table("schools").select("id, name, espn_team_id, cfbd_name").order("name").execute()
