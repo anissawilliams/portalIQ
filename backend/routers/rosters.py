@@ -279,8 +279,8 @@ def search_roster_2026(
 
     if team:
         mask = (
-            df["team"].str.lower().str.contains(team.lower(), na=False) |
-            df["team_abbreviation"].str.lower() == team.lower()
+                df["team"].str.lower().str.contains(team.lower(), na=False) |
+                (df["team_abbreviation"].str.lower() == team.lower())
         )
         df = df[mask]
     if position:
