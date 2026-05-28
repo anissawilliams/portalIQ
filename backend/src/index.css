@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --team-primary: #782F40;
+  --team-accent: #CEB888;
+  --team-dark: #5a232f;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #0a0e1a;
+  color: #e8eaf0;
+  font-family: 'DM Sans', sans-serif;
+}

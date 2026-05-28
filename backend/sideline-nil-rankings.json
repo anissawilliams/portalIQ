@@ -1,0 +1,5774 @@
+{
+  "data": [
+    {
+      "rank": 1,
+      "school": "Texas A&M",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 54,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 31
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 9
+        },
+        {
+          "sport": "Baseball",
+          "spend": 6
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 3
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 5
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "school": "Texas",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 52,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 28
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 10
+        },
+        {
+          "sport": "Baseball",
+          "spend": 5.5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 3
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 5.5
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "school": "Ohio State",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 50,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 35
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 7
+        },
+        {
+          "sport": "Wrestling/Lacrosse",
+          "spend": 5
+        },
+        {
+          "sport": "Women's Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "school": "Oregon",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 48,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 30
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 7
+        },
+        {
+          "sport": "Track & Field",
+          "spend": 4
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 7
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "school": "Georgia",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 40,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 25
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Baseball",
+          "spend": 4
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 2.5
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "school": "Miami (FL)",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 40,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 26
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Baseball",
+          "spend": 4
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 4
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "school": "Kentucky",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 39,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 15
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 20
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "school": "Texas Tech",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 40,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 30
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "school": "LSU",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 38,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 22
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 3
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "school": "Alabama",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 32,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 18
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 7
+        },
+        {
+          "sport": "Baseball",
+          "spend": 3
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "school": "Tennessee",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 30,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 18
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 4
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "school": "Penn State",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 35,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 23
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Wrestling",
+          "spend": 4
+        },
+        {
+          "sport": "Women's Sports",
+          "spend": 2
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "school": "Michigan",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 35,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 23
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5.5
+        },
+        {
+          "sport": "Hockey",
+          "spend": 3
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 3.5
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "school": "Oklahoma",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 35,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 22
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Baseball",
+          "spend": 4
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "school": "Indiana",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 35,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 18
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 12
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 5
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "school": "Auburn",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 34,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 21
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Baseball",
+          "spend": 4
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "school": "Ole Miss",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 33,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 21
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5.5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 4
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "school": "USC",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 36,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 23
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Baseball",
+          "spend": 4
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "school": "Nebraska",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 32,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 19
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 7
+        },
+        {
+          "sport": "Volleyball",
+          "spend": 3
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "school": "South Carolina",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 31,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 15
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 10
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 3
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "school": "UCLA",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 31,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 11
+        },
+        {
+          "sport": "Baseball",
+          "spend": 3
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 4
+        }
+      ]
+    },
+    {
+      "rank": 22,
+      "school": "Iowa",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 30,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 16
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 11
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Olympic Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 23,
+      "school": "Clemson",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 28,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 22
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 24,
+      "school": "Notre Dame",
+      "conference": "Independent",
+      "tier": "Power 4",
+      "estimatedSpend": 29,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 23
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 25,
+      "school": "Florida State",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 28,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 18
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 3
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 26,
+      "school": "Kansas",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 27,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 10
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 14
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 27,
+      "school": "Duke",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 27,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 13
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 28,
+      "school": "Wisconsin",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 26,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 17
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Hockey",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 29,
+      "school": "BYU",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 26,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 14
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 10
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 30,
+      "school": "Arkansas",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 25,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 16
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Baseball",
+          "spend": 3.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 31,
+      "school": "Colorado",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 18,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 32,
+      "school": "Iowa State",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 24,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 16
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 33,
+      "school": "North Carolina",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 24,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 9
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 34,
+      "school": "Missouri",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 24,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 16
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 35,
+      "school": "TCU",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 23,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 15
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 36,
+      "school": "Kansas State",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 23,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 15
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 37,
+      "school": "Michigan State",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 23,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 38,
+      "school": "Baylor",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 23,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 15
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 39,
+      "school": "Arizona State",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 23,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 15
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 40,
+      "school": "Washington State",
+      "conference": "Pac-12",
+      "tier": "Power 4",
+      "estimatedSpend": 23,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 15
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 4
+        }
+      ]
+    },
+    {
+      "rank": 41,
+      "school": "Minnesota",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 22,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 14
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Wrestling",
+          "spend": 2
+        },
+        {
+          "sport": "Hockey",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 42,
+      "school": "Louisville",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 22,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 43,
+      "school": "Stanford",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 22,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 7
+        }
+      ]
+    },
+    {
+      "rank": 44,
+      "school": "Illinois",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 22,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Wrestling",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 45,
+      "school": "Oklahoma State",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 22,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2.5
+        },
+        {
+          "sport": "Wrestling",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 46,
+      "school": "Mississippi State",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 21,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 14
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 3.5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 2.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 47,
+      "school": "West Virginia",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 21,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 14
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 48,
+      "school": "Utah",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 21,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 14
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Gymnastics",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 49,
+      "school": "Maryland",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 21,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Lacrosse",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 50,
+      "school": "NC State",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 21,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 7
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 51,
+      "school": "Purdue",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 21,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 52,
+      "school": "Virginia Tech",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 21,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 14
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 53,
+      "school": "Georgia Tech",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 20,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 54,
+      "school": "Pittsburgh",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 20,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2.5
+        }
+      ]
+    },
+    {
+      "rank": 55,
+      "school": "Arizona",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 20,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 56,
+      "school": "Virginia",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 20,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Lacrosse/Soccer",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 57,
+      "school": "Cincinnati",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 20,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 58,
+      "school": "Houston",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 20,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 13
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 59,
+      "school": "UCF",
+      "conference": "Big 12",
+      "tier": "Power 4",
+      "estimatedSpend": 19,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 60,
+      "school": "Northwestern",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 19,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 61,
+      "school": "Cal",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 19,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 4
+        }
+      ]
+    },
+    {
+      "rank": 62,
+      "school": "Rutgers",
+      "conference": "Big Ten",
+      "tier": "Power 4",
+      "estimatedSpend": 19,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 12
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Wrestling",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 63,
+      "school": "Wake Forest",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 18,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 64,
+      "school": "Vanderbilt",
+      "conference": "SEC",
+      "tier": "Power 4",
+      "estimatedSpend": 18,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Baseball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 65,
+      "school": "Boston College",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 18,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 3.5
+        },
+        {
+          "sport": "Hockey",
+          "spend": 2.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 66,
+      "school": "Syracuse",
+      "conference": "ACC",
+      "tier": "Power 4",
+      "estimatedSpend": 18,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Lacrosse",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 67,
+      "school": "UConn",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 18,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 13
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 3
+        }
+      ]
+    },
+    {
+      "rank": 68,
+      "school": "Gonzaga",
+      "conference": "WCC",
+      "tier": "No Football",
+      "estimatedSpend": 16,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 13
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 69,
+      "school": "Villanova",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 14,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 11
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 70,
+      "school": "Boise State",
+      "conference": "Mountain West",
+      "tier": "G5",
+      "estimatedSpend": 14,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 11
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 71,
+      "school": "SMU",
+      "conference": "ACC",
+      "tier": "G5",
+      "estimatedSpend": 13.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 10.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 72,
+      "school": "Fresno State",
+      "conference": "Mountain West",
+      "tier": "G5",
+      "estimatedSpend": 13,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 10
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 73,
+      "school": "Tulane",
+      "conference": "American",
+      "tier": "G5",
+      "estimatedSpend": 13,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 10
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 74,
+      "school": "Marquette",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 12.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 10
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 75,
+      "school": "Memphis",
+      "conference": "American",
+      "tier": "G5",
+      "estimatedSpend": 12.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 9.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 76,
+      "school": "Oregon State",
+      "conference": "Pac-12",
+      "tier": "Power 4",
+      "estimatedSpend": 12.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 8.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 77,
+      "school": "James Madison",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 12,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 9
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 78,
+      "school": "UNLV",
+      "conference": "Mountain West",
+      "tier": "G5",
+      "estimatedSpend": 12,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 8.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 79,
+      "school": "Xavier",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 11.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 9
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 80,
+      "school": "San Diego State",
+      "conference": "Mountain West",
+      "tier": "G5",
+      "estimatedSpend": 11.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 8.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 81,
+      "school": "Seton Hall",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 11,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 8.5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 82,
+      "school": "St. John's",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 11,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 8.5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 83,
+      "school": "Washington",
+      "conference": "Pac-12",
+      "tier": "Power 4",
+      "estimatedSpend": 11,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 7.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 84,
+      "school": "Colorado State",
+      "conference": "Mountain West",
+      "tier": "G5",
+      "estimatedSpend": 10.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 8
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 85,
+      "school": "Providence",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 10.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 8.5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 86,
+      "school": "Creighton",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 10.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 8.5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 87,
+      "school": "DePaul",
+      "conference": "Big East",
+      "tier": "No Football",
+      "estimatedSpend": 10,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 8
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 88,
+      "school": "Saint Mary's",
+      "conference": "WCC",
+      "tier": "No Football",
+      "estimatedSpend": 10,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 8
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 89,
+      "school": "Appalachian State",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 9.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 90,
+      "school": "North Texas",
+      "conference": "American",
+      "tier": "G5",
+      "estimatedSpend": 9.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 91,
+      "school": "Liberty",
+      "conference": "Conference USA",
+      "tier": "G5",
+      "estimatedSpend": 9.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 7.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 92,
+      "school": "Charlotte",
+      "conference": "American",
+      "tier": "G5",
+      "estimatedSpend": 9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 6.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 93,
+      "school": "Louisiana",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 6.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 94,
+      "school": "Marshall",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 8.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 6
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 95,
+      "school": "Ohio",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 8.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 6
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 96,
+      "school": "Saint Louis",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 8.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 6.5
+        },
+        {
+          "sport": "Women's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 97,
+      "school": "Toledo",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 98,
+      "school": "Troy",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 6
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 99,
+      "school": "South Alabama",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 7.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 100,
+      "school": "George Mason",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 7.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 5.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 101,
+      "school": "George Washington",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 7.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 5.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 2
+        }
+      ]
+    },
+    {
+      "rank": 102,
+      "school": "Coastal Carolina",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 7.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 103,
+      "school": "Arkansas State",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 7,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 104,
+      "school": "Georgia State",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 7,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 105,
+      "school": "Miami (OH)",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 7,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 106,
+      "school": "Davidson",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 6.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 107,
+      "school": "San Francisco",
+      "conference": "WCC",
+      "tier": "No Football",
+      "estimatedSpend": 6.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 108,
+      "school": "Old Dominion",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 6.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.8
+        }
+      ]
+    },
+    {
+      "rank": 109,
+      "school": "Texas State",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 6.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.8
+        }
+      ]
+    },
+    {
+      "rank": 110,
+      "school": "Western Michigan",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 6.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 111,
+      "school": "Southern Miss",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 6,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 4.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.7
+        }
+      ]
+    },
+    {
+      "rank": 112,
+      "school": "Jacksonville State",
+      "conference": "Conference USA",
+      "tier": "G5",
+      "estimatedSpend": 6,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 4.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.7
+        }
+      ]
+    },
+    {
+      "rank": 113,
+      "school": "Richmond",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 6,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 4.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 114,
+      "school": "North Dakota State",
+      "conference": "FCS",
+      "tier": "FCS",
+      "estimatedSpend": 6,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 4.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 115,
+      "school": "Ball State",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 5.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 4
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 116,
+      "school": "New Mexico State",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 5.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 4
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 117,
+      "school": "WKU",
+      "conference": "CUSA",
+      "tier": "G5",
+      "estimatedSpend": 5.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 4
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 118,
+      "school": "Massachusetts",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 5.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 119,
+      "school": "Northern Illinois",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 5.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 4
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 120,
+      "school": "Louisiana Monroe",
+      "conference": "Sun Belt",
+      "tier": "G5",
+      "estimatedSpend": 5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.7
+        }
+      ]
+    },
+    {
+      "rank": 121,
+      "school": "Central Michigan",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.7
+        }
+      ]
+    },
+    {
+      "rank": 122,
+      "school": "Sam Houston",
+      "conference": "CUSA",
+      "tier": "G5",
+      "estimatedSpend": 5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.7
+        }
+      ]
+    },
+    {
+      "rank": 123,
+      "school": "Pepperdine",
+      "conference": "WCC",
+      "tier": "No Football",
+      "estimatedSpend": 5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 3.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 124,
+      "school": "Rhode Island",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 3.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 125,
+      "school": "Fordham",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 3.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 126,
+      "school": "Bowling Green",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 127,
+      "school": "Louisiana Tech",
+      "conference": "American",
+      "tier": "G5",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 128,
+      "school": "Saint Joseph's",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 3
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 129,
+      "school": "Drake",
+      "conference": "Missouri Valley",
+      "tier": "No Football",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 3
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.5
+        }
+      ]
+    },
+    {
+      "rank": 130,
+      "school": "South Dakota State",
+      "conference": "FCS",
+      "tier": "FCS",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 131,
+      "school": "Eastern Michigan",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 132,
+      "school": "Buffalo",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 133,
+      "school": "Middle Tennessee",
+      "conference": "CUSA",
+      "tier": "G5",
+      "estimatedSpend": 4.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 3.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 134,
+      "school": "Kent State",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 4,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.8
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 135,
+      "school": "FIU",
+      "conference": "CUSA",
+      "tier": "G5",
+      "estimatedSpend": 4,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.8
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 136,
+      "school": "Portland",
+      "conference": "WCC",
+      "tier": "No Football",
+      "estimatedSpend": 4,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.2
+        }
+      ]
+    },
+    {
+      "rank": 137,
+      "school": "Denver",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 4,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.2
+        }
+      ]
+    },
+    {
+      "rank": 138,
+      "school": "UTEP",
+      "conference": "CUSA",
+      "tier": "G5",
+      "estimatedSpend": 4,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.8
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 139,
+      "school": "Akron",
+      "conference": "MAC",
+      "tier": "G5",
+      "estimatedSpend": 4,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.8
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 140,
+      "school": "Bradley",
+      "conference": "Missouri Valley",
+      "tier": "No Football",
+      "estimatedSpend": 3.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.2
+        }
+      ]
+    },
+    {
+      "rank": 141,
+      "school": "Loyola Chicago",
+      "conference": "Missouri Valley",
+      "tier": "No Football",
+      "estimatedSpend": 3.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.2
+        }
+      ]
+    },
+    {
+      "rank": 142,
+      "school": "Santa Clara",
+      "conference": "WCC",
+      "tier": "No Football",
+      "estimatedSpend": 3.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.2
+        }
+      ]
+    },
+    {
+      "rank": 143,
+      "school": "Saint Bonaventure",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 3.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.2
+        }
+      ]
+    },
+    {
+      "rank": 144,
+      "school": "Hawaii",
+      "conference": "Mountain West",
+      "tier": "G5",
+      "estimatedSpend": 3.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 145,
+      "school": "Montana",
+      "conference": "FCS",
+      "tier": "FCS",
+      "estimatedSpend": 3.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 146,
+      "school": "UC Davis",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 3.8,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.3
+        }
+      ]
+    },
+    {
+      "rank": 147,
+      "school": "Grambling",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 148,
+      "school": "Montana State",
+      "conference": "FCS",
+      "tier": "FCS",
+      "estimatedSpend": 3.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 149,
+      "school": "Stephen F. Austin",
+      "conference": "FCS",
+      "tier": "FCS",
+      "estimatedSpend": 3.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 150,
+      "school": "VMI",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 151,
+      "school": "Samford",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.7,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.6
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 152,
+      "school": "Southern",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.7,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.6
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 153,
+      "school": "Wofford",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.7,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.6
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 154,
+      "school": "Western Carolina",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.6,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 155,
+      "school": "Mercer",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.6,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 156,
+      "school": "East Tennessee State",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.6,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 157,
+      "school": "The Citadel",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.6,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 158,
+      "school": "Furman",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 3.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.4
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 159,
+      "school": "NC Central",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.4
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 160,
+      "school": "South Carolina State",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.5,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.4
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 161,
+      "school": "Delaware State",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.4,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.3
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 162,
+      "school": "Alabama A&M",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.4,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.3
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 163,
+      "school": "Alcorn State",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.3,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 164,
+      "school": "Bethune-Cookman",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.3,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 165,
+      "school": "Mississippi Valley State",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.2,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.1
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 166,
+      "school": "Maryland Eastern Shore",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.2,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2.1
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 167,
+      "school": "Coppin State",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 3.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.1
+        }
+      ]
+    },
+    {
+      "rank": 168,
+      "school": "UC San Diego",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 3.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2.1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.1
+        }
+      ]
+    },
+    {
+      "rank": 169,
+      "school": "Cal State Fullerton",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 3.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.3
+        }
+      ]
+    },
+    {
+      "rank": 170,
+      "school": "Cal State Northridge",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 3.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.3
+        }
+      ]
+    },
+    {
+      "rank": 171,
+      "school": "Indiana State",
+      "conference": "Missouri Valley",
+      "tier": "No Football",
+      "estimatedSpend": 3.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.1
+        }
+      ]
+    },
+    {
+      "rank": 172,
+      "school": "Southern Illinois",
+      "conference": "Missouri Valley",
+      "tier": "No Football",
+      "estimatedSpend": 3.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1.1
+        }
+      ]
+    },
+    {
+      "rank": 173,
+      "school": "VCU",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 3,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 174,
+      "school": "La Salle",
+      "conference": "Atlantic 10",
+      "tier": "No Football",
+      "estimatedSpend": 3,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 175,
+      "school": "Stony Brook",
+      "conference": "America East",
+      "tier": "No Football",
+      "estimatedSpend": 2.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.9
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 1
+        }
+      ]
+    },
+    {
+      "rank": 176,
+      "school": "Delaware",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 2.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.4
+        }
+      ]
+    },
+    {
+      "rank": 177,
+      "school": "William & Mary",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 2.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.4
+        }
+      ]
+    },
+    {
+      "rank": 178,
+      "school": "Richmond",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 2.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 2
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.4
+        }
+      ]
+    },
+    {
+      "rank": 179,
+      "school": "Chattanooga",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 2.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 1.9
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.4
+        }
+      ]
+    },
+    {
+      "rank": 180,
+      "school": "Towson",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 2.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 1.9
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.4
+        }
+      ]
+    },
+    {
+      "rank": 181,
+      "school": "Oral Roberts",
+      "conference": "Summit",
+      "tier": "No Football",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.2
+        }
+      ]
+    },
+    {
+      "rank": 182,
+      "school": "South Dakota",
+      "conference": "MVFC",
+      "tier": "FCS",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.85
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 183,
+      "school": "James Madison",
+      "conference": "CAA",
+      "tier": "No Football",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 1
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.2
+        }
+      ]
+    },
+    {
+      "rank": 184,
+      "school": "Boston University",
+      "conference": "Patriot",
+      "tier": "No Football",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Hockey",
+          "spend": 0.3
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 185,
+      "school": "Eastern Washington",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.85
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 186,
+      "school": "Quinnipiac",
+      "conference": "MAAC",
+      "tier": "No Football",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Hockey",
+          "spend": 0.3
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 187,
+      "school": "UC Riverside",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.95
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.25
+        }
+      ]
+    },
+    {
+      "rank": 188,
+      "school": "Cal State Fullerton",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.95
+        },
+        {
+          "sport": "Baseball",
+          "spend": 0.15
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 189,
+      "school": "Cleveland State",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 1.02
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.18
+        }
+      ]
+    },
+    {
+      "rank": 190,
+      "school": "Yale",
+      "conference": "Ivy League",
+      "tier": "Non-Participant",
+      "estimatedSpend": 1.2,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.6
+        }
+      ]
+    },
+    {
+      "rank": 191,
+      "school": "North Dakota",
+      "conference": "MVFC",
+      "tier": "FCS",
+      "estimatedSpend": 1.1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.75
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 192,
+      "school": "Northeastern",
+      "conference": "CAA",
+      "tier": "No Football",
+      "estimatedSpend": 1.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.9
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.2
+        }
+      ]
+    },
+    {
+      "rank": 193,
+      "school": "Hofstra",
+      "conference": "CAA",
+      "tier": "No Football",
+      "estimatedSpend": 1.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.9
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.2
+        }
+      ]
+    },
+    {
+      "rank": 194,
+      "school": "Idaho",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 1.1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.75
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 195,
+      "school": "Cal State Northridge",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 1.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.9
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.2
+        }
+      ]
+    },
+    {
+      "rank": 196,
+      "school": "Detroit Mercy",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 1.1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.94
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.16
+        }
+      ]
+    },
+    {
+      "rank": 197,
+      "school": "Northern Arizona",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 198,
+      "school": "Cal Poly",
+      "conference": "Big West",
+      "tier": "FCS",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 199,
+      "school": "Youngstown State",
+      "conference": "MVFC",
+      "tier": "FCS",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 200,
+      "school": "Villanova",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.7
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 201,
+      "school": "Rider",
+      "conference": "MAAC",
+      "tier": "No Football",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.88
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.17
+        }
+      ]
+    },
+    {
+      "rank": 202,
+      "school": "Green Bay",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.89
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.16
+        }
+      ]
+    },
+    {
+      "rank": 203,
+      "school": "Milwaukee",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.89
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.16
+        }
+      ]
+    },
+    {
+      "rank": 204,
+      "school": "Penn",
+      "conference": "Ivy League",
+      "tier": "Non-Participant",
+      "estimatedSpend": 1.05,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.55
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.5
+        }
+      ]
+    },
+    {
+      "rank": 205,
+      "school": "Florida Gulf Coast",
+      "conference": "ASUN",
+      "tier": "No Football",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.2
+        }
+      ]
+    },
+    {
+      "rank": 206,
+      "school": "Drexel",
+      "conference": "CAA",
+      "tier": "No Football",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.2
+        }
+      ]
+    },
+    {
+      "rank": 207,
+      "school": "Portland State",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 208,
+      "school": "Weber State",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 209,
+      "school": "Indiana State",
+      "conference": "MVFC",
+      "tier": "FCS",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 210,
+      "school": "Southern Illinois",
+      "conference": "MVFC",
+      "tier": "FCS",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.6
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.25
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 211,
+      "school": "Stony Brook",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 212,
+      "school": "Delaware",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 213,
+      "school": "Chattanooga",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 214,
+      "school": "American",
+      "conference": "Patriot",
+      "tier": "No Football",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.83
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.17
+        }
+      ]
+    },
+    {
+      "rank": 215,
+      "school": "Winthrop",
+      "conference": "Big South",
+      "tier": "No Football",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.84
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.16
+        }
+      ]
+    },
+    {
+      "rank": 216,
+      "school": "Oakland",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 1,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.85
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 217,
+      "school": "UIC",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 1.02,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.87
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 218,
+      "school": "Manhattan",
+      "conference": "MAAC",
+      "tier": "No Football",
+      "estimatedSpend": 0.99,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.84
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 219,
+      "school": "Princeton",
+      "conference": "Ivy League",
+      "tier": "Non-Participant",
+      "estimatedSpend": 0.98,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.48
+        }
+      ]
+    },
+    {
+      "rank": 220,
+      "school": "Wright State",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 0.97,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.82
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 221,
+      "school": "Idaho State",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 0.95,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.3
+        }
+      ]
+    },
+    {
+      "rank": 222,
+      "school": "Murray State",
+      "conference": "OVC",
+      "tier": "FCS",
+      "estimatedSpend": 0.95,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.55
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.25
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 223,
+      "school": "Richmond",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 0.95,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.6
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 224,
+      "school": "Omaha",
+      "conference": "Summit",
+      "tier": "No Football",
+      "estimatedSpend": 0.95,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.8
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 225,
+      "school": "Fairfield",
+      "conference": "MAAC",
+      "tier": "No Football",
+      "estimatedSpend": 0.94,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.79
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 226,
+      "school": "Central Arkansas",
+      "conference": "ASUN",
+      "tier": "No Football",
+      "estimatedSpend": 0.93,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.78
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 227,
+      "school": "Stephen F. Austin",
+      "conference": "Southland",
+      "tier": "FCS",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.65
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.15
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 228,
+      "school": "NC Wilmington",
+      "conference": "CAA",
+      "tier": "No Football",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.75
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.15
+        }
+      ]
+    },
+    {
+      "rank": 229,
+      "school": "Tennessee State",
+      "conference": "OVC",
+      "tier": "FCS",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.55
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.25
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 230,
+      "school": "William & Mary",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.58
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.32
+        }
+      ]
+    },
+    {
+      "rank": 231,
+      "school": "East Tennessee State",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.58
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 232,
+      "school": "Fordham",
+      "conference": "Patriot",
+      "tier": "FCS",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.58
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 233,
+      "school": "Northern Colorado",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.58
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.32
+        }
+      ]
+    },
+    {
+      "rank": 234,
+      "school": "Southern Utah",
+      "conference": "Big Sky",
+      "tier": "FCS",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.58
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.32
+        }
+      ]
+    },
+    {
+      "rank": 235,
+      "school": "High Point",
+      "conference": "Big South",
+      "tier": "No Football",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.76
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.14
+        }
+      ]
+    },
+    {
+      "rank": 236,
+      "school": "Purdue Fort Wayne",
+      "conference": "Horizon",
+      "tier": "No Football",
+      "estimatedSpend": 0.9,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.76
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.14
+        }
+      ]
+    },
+    {
+      "rank": 237,
+      "school": "Holy Cross",
+      "conference": "Patriot",
+      "tier": "FCS",
+      "estimatedSpend": 0.88,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.54
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.34
+        }
+      ]
+    },
+    {
+      "rank": 238,
+      "school": "Lehigh",
+      "conference": "Patriot",
+      "tier": "FCS",
+      "estimatedSpend": 0.87,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.56
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.31
+        }
+      ]
+    },
+    {
+      "rank": 239,
+      "school": "Lafayette",
+      "conference": "Patriot",
+      "tier": "FCS",
+      "estimatedSpend": 0.87,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.56
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.31
+        }
+      ]
+    },
+    {
+      "rank": 240,
+      "school": "Canisius",
+      "conference": "MAAC",
+      "tier": "No Football",
+      "estimatedSpend": 0.88,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.74
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.14
+        }
+      ]
+    },
+    {
+      "rank": 241,
+      "school": "Monmouth",
+      "conference": "Big South",
+      "tier": "No Football",
+      "estimatedSpend": 0.85,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.72
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 242,
+      "school": "Hawaii Pacific",
+      "conference": "WAC",
+      "tier": "No Football",
+      "estimatedSpend": 0.86,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.73
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 243,
+      "school": "Iona",
+      "conference": "MAAC",
+      "tier": "No Football",
+      "estimatedSpend": 0.84,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.71
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 244,
+      "school": "UC San Diego",
+      "conference": "Big West",
+      "tier": "No Football",
+      "estimatedSpend": 0.83,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.7
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 245,
+      "school": "Pacific",
+      "conference": "WCC",
+      "tier": "No Football",
+      "estimatedSpend": 0.83,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.71
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 246,
+      "school": "Harvard",
+      "conference": "Ivy League",
+      "tier": "Non-Participant",
+      "estimatedSpend": 0.82,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.44
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.38
+        }
+      ]
+    },
+    {
+      "rank": 247,
+      "school": "Valparaiso",
+      "conference": "MVC",
+      "tier": "No Football",
+      "estimatedSpend": 0.81,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.68
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 248,
+      "school": "North Dakota State",
+      "conference": "FCS",
+      "tier": "FCS",
+      "estimatedSpend": 0.82,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 249,
+      "school": "Coppin State",
+      "conference": "MEAC",
+      "tier": "No Football",
+      "estimatedSpend": 0.8,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.68
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 250,
+      "school": "Grambling",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.81,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.11
+        }
+      ]
+    },
+    {
+      "rank": 251,
+      "school": "NC Central",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.79,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 252,
+      "school": "South Carolina State",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.79,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 253,
+      "school": "Delaware State",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.47
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 254,
+      "school": "Alabama A&M",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.46
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.14
+        }
+      ]
+    },
+    {
+      "rank": 255,
+      "school": "Alcorn State",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.77,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.46
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 256,
+      "school": "Bethune-Cookman",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.77,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.46
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 257,
+      "school": "Mississippi Valley State",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.76,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.46
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.17
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 258,
+      "school": "Maryland Eastern Shore",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.75,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.45
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.17
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 259,
+      "school": "Texas Southern",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.76,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.46
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.17
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 260,
+      "school": "Prairie View A&M",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.76,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.46
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.17
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 261,
+      "school": "Howard",
+      "conference": "MEAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.75,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.45
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.17
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 262,
+      "school": "McNeese",
+      "conference": "Southland",
+      "tier": "FCS",
+      "estimatedSpend": 0.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.5
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.3
+        }
+      ]
+    },
+    {
+      "rank": 263,
+      "school": "North Alabama",
+      "conference": "Big South",
+      "tier": "FCS",
+      "estimatedSpend": 0.8,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.5
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 264,
+      "school": "Brown",
+      "conference": "Ivy League",
+      "tier": "Non-Participant",
+      "estimatedSpend": 0.79,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.42
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.37
+        }
+      ]
+    },
+    {
+      "rank": 265,
+      "school": "Eastern Illinois",
+      "conference": "OVC",
+      "tier": "FCS",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.3
+        }
+      ]
+    },
+    {
+      "rank": 266,
+      "school": "Albany",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.3
+        }
+      ]
+    },
+    {
+      "rank": 267,
+      "school": "NC A&T",
+      "conference": "CAA",
+      "tier": "FCS",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 268,
+      "school": "Bucknell",
+      "conference": "Patriot",
+      "tier": "FCS",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.3
+        }
+      ]
+    },
+    {
+      "rank": 269,
+      "school": "Gardner-Webb",
+      "conference": "Big South",
+      "tier": "FCS",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.2
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 270,
+      "school": "Saint Peter's",
+      "conference": "MAAC",
+      "tier": "No Football",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.66
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 271,
+      "school": "Jacksonville",
+      "conference": "ASUN",
+      "tier": "No Football",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.65
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.13
+        }
+      ]
+    },
+    {
+      "rank": 272,
+      "school": "USC Upstate",
+      "conference": "Big South",
+      "tier": "No Football",
+      "estimatedSpend": 0.78,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.66
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 273,
+      "school": "Holy Cross",
+      "conference": "Patriot",
+      "tier": "FCS",
+      "estimatedSpend": 0.76,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.47
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.29
+        }
+      ]
+    },
+    {
+      "rank": 274,
+      "school": "Nicholls",
+      "conference": "Southland",
+      "tier": "FCS",
+      "estimatedSpend": 0.76,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.28
+        }
+      ]
+    },
+    {
+      "rank": 275,
+      "school": "Florida A&M",
+      "conference": "SWAC",
+      "tier": "FCS",
+      "estimatedSpend": 0.76,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.48
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 276,
+      "school": "Stetson",
+      "conference": "ASUN",
+      "tier": "No Football",
+      "estimatedSpend": 0.76,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.64
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.12
+        }
+      ]
+    },
+    {
+      "rank": 277,
+      "school": "SE Missouri State",
+      "conference": "OVC",
+      "tier": "FCS",
+      "estimatedSpend": 0.75,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.47
+        },
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.18
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.1
+        }
+      ]
+    },
+    {
+      "rank": 278,
+      "school": "Samford",
+      "conference": "SoCon",
+      "tier": "FCS",
+      "estimatedSpend": 0.75,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.47
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.28
+        }
+      ]
+    },
+    {
+      "rank": 279,
+      "school": "Dartmouth",
+      "conference": "Ivy League",
+      "tier": "Non-Participant",
+      "estimatedSpend": 0.75,
+      "sports": [
+        {
+          "sport": "Men's Basketball",
+          "spend": 0.4
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.35
+        }
+      ]
+    },
+    {
+      "rank": 280,
+      "school": "Austin Peay",
+      "conference": "OVC",
+      "tier": "FCS",
+      "estimatedSpend": 0.73,
+      "sports": [
+        {
+          "sport": "Football",
+          "spend": 0.46
+        },
+        {
+          "sport": "Other Sports",
+          "spend": 0.27
+        }
+      ]
+    },
+    {
+      "rank": 281,
+      "school": "Army",
+      "conference": "Independent",
+      "tier": "Service Academy",
+      "estimatedSpend": 0,
+      "sports": []
+    },
+    {
+      "rank": 282,
+      "school": "Navy",
+      "conference": "American",
+      "tier": "Service Academy",
+      "estimatedSpend": 0,
+      "sports": []
+    },
+    {
+      "rank": 283,
+      "school": "Air Force",
+      "conference": "Mountain West",
+      "tier": "Service Academy",
+      "estimatedSpend": 0,
+      "sports": []
+    }
+  ],
+  "metadata": {
+    "source": "The Sideline",
+    "url": "https://thesideline.co",
+    "exported": "2026-05-16T00:49:07.716Z",
+    "count": 283
+  }
+}

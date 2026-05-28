@@ -17,8 +17,11 @@ router = APIRouter(prefix="/rosters", tags=["rosters"])
 
 
 def clean(df):
-    return df.replace({np.nan: None})
+    return df.where(df.notna(), None)
 
+def clean_dict(d):
+    return {k: (None if isinstance(v, float) and v != v else v)
+            for k, v in d.items()}
 
 @router.get("/teams")
 def list_teams(

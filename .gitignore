@@ -22,3 +22,4 @@ backend/debug_auth.py
 backend/debug_route.py
 .idea/
 backend/test_auth.py
+roster_edge_class_paper.md
