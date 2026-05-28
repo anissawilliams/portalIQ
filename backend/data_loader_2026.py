@@ -168,6 +168,7 @@ def get_rosters_2026() -> pd.DataFrame:
     df = df.fillna("").replace({float("nan"): None})
 
     print(f"  Ready: {len(df):,} players across {df['team'].nunique()} teams")
+    print(f"  Sample teams: {df['team'].value_counts().head(10).to_dict()}")
     return df
 
 
