@@ -83,10 +83,11 @@ def _flatten_row(row: dict) -> dict:
     athlete = row.get("athletes") or {}
     school = row.get("schools") or {}
 
-    # DEBUG — remove after
-    if not school:
-        print(f"DEBUG no school: {row.keys()}, schools value: {row.get('schools')}")
-
+    # Handle if Supabase returns nested joins as a list
+    if isinstance(athlete, list):
+        athlete = athlete[0] if athlete else {}
+    if isinstance(school, list):
+        school = school[0] if school else {}
 
     # Position — prefer athlete_teams.position, fall back to athletes.position
     raw_pos = (row.get("position") or athlete.get("position") or "ATH").upper()
