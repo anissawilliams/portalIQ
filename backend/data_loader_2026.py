@@ -63,7 +63,7 @@ def _fetch_all_rosters() -> list[dict]:
                 "         position, position_raw, position_name, pos_group, "
                 "         birth_city, birth_state), "
                 "schools(id, name, abbreviation, espn_team_id, "
-                "        location, nickname, color, alternate_color, conference)"
+                "        location, nickname, primary_color, secondary_color, conference)"
             )
             .range(offset, offset + page_size - 1)
             .execute()
@@ -134,8 +134,8 @@ def _flatten_row(row: dict) -> dict:
         "team_id":              str(school.get("id", "")),
         "team_location":        school.get("location", ""),
         "team_nickname":        school.get("nickname", ""),
-        "color":                school.get("color", ""),
-        "alternate_color":      school.get("alternate_color", ""),
+        "color":                school.get("primary_color", ""),
+        "alternate_color":      school.get("secondary_color", ""),
         "conference":           school.get("conference", ""),
         "est_player_nil_cost":  est_nil,
         "transfer_value_score": tvs,
