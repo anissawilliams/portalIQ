@@ -80,14 +80,9 @@ def _fetch_all_rosters() -> list[dict]:
 
 
 def _flatten_row(row: dict) -> dict:
+    """Flatten the nested Supabase join into a flat dict."""
     athlete = row.get("athletes") or {}
-    school = row.get("schools") or {}
-
-    # Handle if Supabase returns nested joins as a list
-    if isinstance(athlete, list):
-        athlete = athlete[0] if athlete else {}
-    if isinstance(school, list):
-        school = school[0] if school else {}
+    school  = row.get("schools")  or {}
 
     # Position — prefer athlete_teams.position, fall back to athletes.position
     raw_pos = (row.get("position") or athlete.get("position") or "ATH").upper()
@@ -107,9 +102,14 @@ def _flatten_row(row: dict) -> dict:
     nil_norm = base_nil / 180000
     tvs      = round(min(nil_norm * (exp / 4.0) * 1.2, 1.5), 4)
 
-    # Position group
-    pg_raw    = athlete.get("pos_group") or "OFF"
-    pos_group = POS_GROUP_MAP.get(pg_raw, pg_raw)
+    # Derive pos_group from mapped position (DB value is unreliable)
+    DEFENSE_POSITIONS     = {"DL", "EDGE", "LB", "CB", "S"}
+    SPECIAL_TEAMS_POSITIONS = {"K", "P", "LS"}
+    pos_group = (
+        "Defense"       if pos in DEFENSE_POSITIONS
+        else "Special Teams" if pos in SPECIAL_TEAMS_POSITIONS
+        else "Offense"
+    )
 
     return {
         "athlete_id":           str(athlete.get("id", "")),
@@ -168,7 +168,6 @@ def get_rosters_2026() -> pd.DataFrame:
     df = df.fillna("").replace({float("nan"): None})
 
     print(f"  Ready: {len(df):,} players across {df['team'].nunique()} teams")
-    print(f"  Sample teams: {df['team'].value_counts().head(10).to_dict()}")
     return df
 
 
