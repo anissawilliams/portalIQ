@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="180" y="30" font-family="Arial" font-size="22" font-weight="700" fill="#202124">Florida State NIL: Base Model SHAP Importance</text>
+<text x="168" y="82" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Budget tier</text>
+<rect x="180" y="65" width="48.3" height="24" rx="3" fill="#345995"/>
+<text x="236.3" y="83" font-family="Arial" font-size="14" fill="#333">$31,817</text>
+<text x="168" y="130" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Experience</text>
+<rect x="180" y="113" width="159.2" height="24" rx="3" fill="#345995"/>
+<text x="347.2" y="131" font-family="Arial" font-size="14" fill="#333">$104,946</text>
+<text x="168" y="178" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Class multiplier</text>
+<rect x="180" y="161" width="193.4" height="24" rx="3" fill="#345995"/>
+<text x="381.4" y="179" font-family="Arial" font-size="14" fill="#333">$127,519</text>
+<text x="168" y="226" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Position value</text>
+<rect x="180" y="209" width="204.4" height="24" rx="3" fill="#345995"/>
+<text x="392.4" y="227" font-family="Arial" font-size="14" fill="#333">$134,780</text>
+<text x="168" y="274" text-anchor="end" font-family="Arial" font-size="15" fill="#333">School budget</text>
+<rect x="180" y="257" width="267.1" height="24" rx="3" fill="#345995"/>
+<text x="455.1" y="275" font-family="Arial" font-size="14" fill="#333">$176,143</text>
+<text x="168" y="322" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Depth / role</text>
+<rect x="180" y="305" width="680.0" height="24" rx="3" fill="#345995"/>
+<text x="868.0" y="323" font-family="Arial" font-size="14" fill="#333">$448,368</text>
+</svg>

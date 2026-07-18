@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="180" y="30" font-family="Arial" font-size="22" font-weight="700" fill="#202124">PortalIQ NIL: Base Model SHAP Importance</text>
+<text x="168" y="82" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Experience</text>
+<rect x="180" y="65" width="130.1" height="24" rx="3" fill="#345995"/>
+<text x="318.1" y="83" font-family="Arial" font-size="14" fill="#333">$83,867</text>
+<text x="168" y="130" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Class multiplier</text>
+<rect x="180" y="113" width="163.6" height="24" rx="3" fill="#345995"/>
+<text x="351.6" y="131" font-family="Arial" font-size="14" fill="#333">$105,458</text>
+<text x="168" y="178" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Position value</text>
+<rect x="180" y="161" width="183.4" height="24" rx="3" fill="#345995"/>
+<text x="371.4" y="179" font-family="Arial" font-size="14" fill="#333">$118,191</text>
+<text x="168" y="226" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Budget tier</text>
+<rect x="180" y="209" width="231.1" height="24" rx="3" fill="#345995"/>
+<text x="419.1" y="227" font-family="Arial" font-size="14" fill="#333">$148,949</text>
+<text x="168" y="274" text-anchor="end" font-family="Arial" font-size="15" fill="#333">School budget</text>
+<rect x="180" y="257" width="426.1" height="24" rx="3" fill="#345995"/>
+<text x="614.1" y="275" font-family="Arial" font-size="14" fill="#333">$274,602</text>
+<text x="168" y="322" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Depth / role</text>
+<rect x="180" y="305" width="680.0" height="24" rx="3" fill="#345995"/>
+<text x="868.0" y="323" font-family="Arial" font-size="14" fill="#333">$438,245</text>
+</svg>

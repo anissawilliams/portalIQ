@@ -20,6 +20,7 @@ Usage:
 import json
 import warnings
 import argparse
+import math
 import re
 import unicodedata
 import numpy as np
@@ -80,12 +81,22 @@ FEATURES = ['pos_mult', 'class_mult', 'depth_factor',
             'budget_norm', 'conf_mult', 'exp_norm']
 
 DEFAULT_EA_RATINGS = Path(__file__).resolve().parents[1] / "scripts" / "data" / "ea_cf27_ratings.csv"
+DEFAULT_DEPTH_CHARTS = Path(__file__).resolve().parents[1] / "scripts" / "data" / "ourlads_depth_charts.csv"
 _BUDGET_LOOKUP_CACHE = {}
 
 PLAYER_MARKET_FLOORS = {
     ("ducerobinson", "floridastate"): 1500000,
     ("quintrevionwisner", "floridastate"): 650000,
 }
+
+EXPLAIN_STAGE_COLS = [
+    "nil_base_similarity",
+    "nil_after_ea",
+    "nil_after_initial_cap",
+    "nil_after_depth_opportunity",
+    "nil_after_player_floor",
+    "nil_estimate",
+]
 
 # ── Anchor dataset ────────────────────────────────────────────
 # Known + disclosed NIL values + calibrated synthetic anchors
@@ -250,6 +261,29 @@ def load_ea_ratings(ea_path: str | Path | None) -> pd.DataFrame:
     return ea
 
 
+def load_depth_charts(depth_path: str | Path | None) -> pd.DataFrame:
+    if not depth_path:
+        return pd.DataFrame()
+
+    path = Path(depth_path)
+    if not path.exists():
+        print(f"  Depth charts not found: {path}")
+        return pd.DataFrame()
+
+    depth = pd.read_csv(path)
+    required = {"team", "position", "depth_slot", "player_name"}
+    missing = required - set(depth.columns)
+    if missing:
+        raise ValueError(f"Depth chart CSV missing columns: {sorted(missing)}")
+
+    depth = depth.copy()
+    depth["name_key"] = depth.get("name_key", depth["player_name"].map(normalize_name))
+    depth["team_key"] = depth["team"].map(normalize_team)
+    depth["depth_slot"] = pd.to_numeric(depth["depth_slot"], errors="coerce")
+    depth = depth[depth["name_key"].ne("") & depth["depth_slot"].notna()]
+    return depth.sort_values(["team_key", "name_key", "depth_slot"])
+
+
 def attach_ea_ratings(roster: pd.DataFrame, ea: pd.DataFrame) -> pd.DataFrame:
     roster = roster.copy()
     for col in ["ea_ovr", "ea_spd", "ea_str", "ea_agi", "ea_awr", "ea_position"]:
@@ -284,27 +318,70 @@ def attach_ea_ratings(roster: pd.DataFrame, ea: pd.DataFrame) -> pd.DataFrame:
     return roster
 
 
+def attach_depth_charts(roster: pd.DataFrame, depth: pd.DataFrame) -> pd.DataFrame:
+    roster = roster.copy()
+    for col in [
+        "ourlads_depth_slot", "ourlads_position", "ourlads_class_tag",
+        "ourlads_is_transfer", "ourlads_is_true_freshman",
+        "ourlads_source_updated_at", "ourlads_source_url",
+    ]:
+        roster[col] = np.nan if col == "ourlads_depth_slot" else ""
+
+    if depth.empty:
+        roster["ourlads_match"] = False
+        return roster
+
+    by_name = {name: grp for name, grp in depth.groupby("name_key")}
+    matches = 0
+    for idx, row in roster.iterrows():
+        name_key = normalize_name(row.get("display_name", row.get("player_name", "")))
+        candidates = by_name.get(name_key)
+        if candidates is None:
+            continue
+
+        team = row.get("team", "")
+        team_matches = candidates[candidates["team"].map(lambda chart_team: teams_match(team, chart_team))]
+        if team_matches.empty:
+            continue
+
+        candidate = team_matches.sort_values("depth_slot").iloc[0]
+        roster.at[idx, "ourlads_depth_slot"] = candidate.get("depth_slot")
+        roster.at[idx, "ourlads_position"] = candidate.get("position", "")
+        roster.at[idx, "ourlads_class_tag"] = candidate.get("class_tag", "")
+        roster.at[idx, "ourlads_is_transfer"] = bool(candidate.get("is_transfer", False))
+        roster.at[idx, "ourlads_is_true_freshman"] = bool(candidate.get("is_true_freshman", False))
+        roster.at[idx, "ourlads_source_updated_at"] = candidate.get("source_updated_at", "")
+        roster.at[idx, "ourlads_source_url"] = candidate.get("source_url", "")
+        matches += 1
+
+    roster["ourlads_match"] = roster["ourlads_depth_slot"].notna()
+    print(f"  Ourlads depth matched: {matches:,} / {len(roster):,}")
+    return roster
+
+
 def ensure_depth_rank(roster: pd.DataFrame) -> pd.DataFrame:
     roster = roster.copy()
     if "depth_rank" in roster.columns and roster["depth_rank"].notna().any():
         roster["depth_rank"] = pd.to_numeric(roster["depth_rank"], errors="coerce").fillna(2).astype(int)
-        return roster
-
-    if "transfer_value_score" in roster.columns:
-        score = pd.to_numeric(roster["transfer_value_score"], errors="coerce").fillna(0)
     else:
-        class_score = roster.get("class", pd.Series("", index=roster.index)).map(CLASS_EXP).fillna(0.25)
-        exp_score = pd.to_numeric(roster.get("experience_years", 0), errors="coerce").fillna(0).clip(0, 4) / 4
-        ea_ovr = pd.to_numeric(roster.get("ea_ovr"), errors="coerce")
-        ea_score = (ea_ovr / 100).fillna(0)
-        no_ea_penalty = np.where(ea_ovr.notna(), 0, -0.10)
-        score = (ea_score * 0.70) + (exp_score * 0.20) + (class_score * 0.10) + no_ea_penalty
+        if "transfer_value_score" in roster.columns:
+            score = pd.to_numeric(roster["transfer_value_score"], errors="coerce").fillna(0)
+        else:
+            class_score = roster.get("class", pd.Series("", index=roster.index)).map(CLASS_EXP).fillna(0.25)
+            exp_score = pd.to_numeric(roster.get("experience_years", 0), errors="coerce").fillna(0).clip(0, 4) / 4
+            ea_ovr = pd.to_numeric(roster.get("ea_ovr"), errors="coerce")
+            ea_score = (ea_ovr / 100).fillna(0)
+            no_ea_penalty = np.where(ea_ovr.notna(), 0, -0.10)
+            score = (ea_score * 0.70) + (exp_score * 0.20) + (class_score * 0.10) + no_ea_penalty
 
-    roster["_depth_score"] = score
-    roster["_position_key"] = roster["position"].map(canonical_position)
-    roster["depth_rank"] = roster.groupby(["team", "_position_key"])["_depth_score"] \
-        .rank(ascending=False, method="first").astype(int)
-    roster = roster.drop(columns=["_depth_score", "_position_key"])
+        roster["_depth_score"] = score
+        roster["_position_key"] = roster["position"].map(canonical_position)
+        roster["depth_rank"] = roster.groupby(["team", "_position_key"])["_depth_score"] \
+            .rank(ascending=False, method="first").astype(int)
+        roster = roster.drop(columns=["_depth_score", "_position_key"])
+
+    real_depth = pd.to_numeric(roster.get("ourlads_depth_slot"), errors="coerce")
+    roster.loc[real_depth.notna(), "depth_rank"] = real_depth[real_depth.notna()].astype(int)
     return roster
 
 
@@ -331,8 +408,64 @@ def apply_market_caps(values: np.ndarray, roster: pd.DataFrame) -> np.ndarray:
             depth = 2
         depth = min(max(depth, 1), 4)
         cap = POSITION_CAPS.get(pos, 500000) * DEPTH_CAP_MULT.get(depth, 0.15)
+        ovr = row.get("ea_ovr")
+        try:
+            ovr = float(ovr)
+        except (TypeError, ValueError):
+            ovr = np.nan
+        if pos == "QB" and not np.isnan(ovr):
+            if ovr < 80:
+                cap = min(cap, 750000)
+            elif ovr < 85:
+                cap = min(cap, 1500000)
+            elif ovr < 90:
+                cap = min(cap, 4000000)
+        elif pos in {"WR", "RB"} and not np.isnan(ovr):
+            if ovr < 80:
+                cap = min(cap, 350000)
+            elif ovr < 85:
+                cap = min(cap, 800000)
+            elif ovr < 90:
+                cap = min(cap, 1200000)
+        elif pos in {"OT", "IOL", "EDGE", "CB", "S", "LB", "DL", "DT", "DE"} and not np.isnan(ovr):
+            if ovr < 80:
+                cap = min(cap, 500000)
+            elif ovr < 85:
+                cap = min(cap, 900000)
         capped[i] = min(capped[i], cap)
     return np.round(capped).astype(int)
+
+
+def apply_depth_opportunity_adjustment(values: np.ndarray, roster: pd.DataFrame) -> np.ndarray:
+    adjusted = values.astype(float).copy()
+    for i, (_, row) in enumerate(roster.iterrows()):
+        if not bool(row.get("ourlads_match", False)):
+            continue
+        slot = row.get("ourlads_depth_slot")
+        try:
+            slot = int(slot)
+        except (TypeError, ValueError):
+            continue
+
+        pos = canonical_position(row.get("position"))
+        ovr = row.get("ea_ovr")
+        try:
+            ovr = float(ovr)
+        except (TypeError, ValueError):
+            ovr = np.nan
+
+        if slot == 1:
+            adjusted[i] *= 1.18
+            if bool(row.get("ourlads_is_transfer", False)):
+                adjusted[i] *= 1.12
+            if pos in {"QB", "WR", "RB", "OT", "EDGE"} and not np.isnan(ovr) and ovr >= 88:
+                adjusted[i] *= 1.18
+        elif slot == 2:
+            adjusted[i] *= 0.82
+        elif slot >= 3:
+            adjusted[i] *= 0.62
+
+    return np.round(adjusted).astype(int)
 
 
 def apply_player_market_floors(values: np.ndarray, roster: pd.DataFrame) -> np.ndarray:
@@ -343,6 +476,39 @@ def apply_player_market_floors(values: np.ndarray, roster: pd.DataFrame) -> np.n
         floor = PLAYER_MARKET_FLOORS.get((player_key, team_key))
         if floor:
             adjusted[i] = max(adjusted[i], floor)
+    return np.round(adjusted).astype(int)
+
+
+def apply_role_market_floors(values: np.ndarray, roster: pd.DataFrame, budgets: dict) -> np.ndarray:
+    adjusted = values.astype(float).copy()
+    for i, (_, row) in enumerate(roster.iterrows()):
+        pos = canonical_position(row.get("position"))
+        if pos != "QB":
+            continue
+
+        slot = row.get("ourlads_depth_slot")
+        try:
+            slot = int(slot)
+        except (TypeError, ValueError):
+            continue
+
+        budget = get_budget(row.get("team", ""), budgets)
+        ovr = row.get("ea_ovr")
+        try:
+            ovr = float(ovr)
+        except (TypeError, ValueError):
+            ovr = np.nan
+
+        if slot == 2 and budget >= 14:
+            floor = 140000
+            if not np.isnan(ovr) and ovr >= 72:
+                floor = 165000
+            if not np.isnan(ovr) and ovr >= 78:
+                floor = 225000
+            adjusted[i] = max(adjusted[i], floor)
+        elif slot == 3 and budget >= 14 and not np.isnan(ovr) and ovr >= 72:
+            adjusted[i] = max(adjusted[i], 75000)
+
     return np.round(adjusted).astype(int)
 
 
@@ -359,7 +525,77 @@ def estimate_nil(X_query, X_anchors_sc, y_anchors, knn):
     return np.array(estimates), np.array(lowers), np.array(uppers)
 
 
-def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5, ea_path: str | None = None):
+def neighbor_explanations(X_query, y_anchors, anchor_df, knn) -> pd.DataFrame:
+    distances, indices = knn.kneighbors(X_query)
+    rows = []
+    for i in range(len(X_query)):
+        sims = np.clip(1 - distances[i], 0, 1)
+        weights = sims / sims.sum() if sims.sum() > 0 else np.ones(len(sims)) / len(sims)
+        names = anchor_df.iloc[indices[i]]["name"].astype(str).tolist()
+        nils = y_anchors[indices[i]]
+        rows.append({
+            "explain_neighbor_anchors": " | ".join(names),
+            "explain_neighbor_values": " | ".join(f"{int(v)}" for v in nils),
+            "explain_neighbor_weights": " | ".join(f"{w:.3f}" for w in weights),
+        })
+    return pd.DataFrame(rows)
+
+
+def local_feature_shap_values(
+    feat_df: pd.DataFrame,
+    scaler: StandardScaler,
+    X_anchors_sc: np.ndarray,
+    y_anchors: np.ndarray,
+    knn: NearestNeighbors,
+) -> pd.DataFrame:
+    raw_features = feat_df[FEATURES].fillna(0).to_numpy(dtype=float)
+    baseline = scaler.mean_
+    feature_count = len(FEATURES)
+    coalition_values = {}
+
+    for mask in range(1 << feature_count):
+        perturbed = np.tile(baseline, (len(raw_features), 1))
+        for feature_idx in range(feature_count):
+            if mask & (1 << feature_idx):
+                perturbed[:, feature_idx] = raw_features[:, feature_idx]
+        X_perturbed = scaler.transform(perturbed)
+        estimates, _, _ = estimate_nil(X_perturbed, X_anchors_sc, y_anchors, knn)
+        coalition_values[mask] = estimates.astype(float)
+
+    shap_values = {}
+    factorial_m = math.factorial(feature_count)
+    for feature_idx, feature in enumerate(FEATURES):
+        contribution = np.zeros(len(raw_features))
+        bit = 1 << feature_idx
+        for mask in range(1 << feature_count):
+            if mask & bit:
+                continue
+            size = mask.bit_count()
+            weight = (
+                math.factorial(size)
+                * math.factorial(feature_count - size - 1)
+                / factorial_m
+            )
+            contribution += weight * (coalition_values[mask | bit] - coalition_values[mask])
+        shap_values[f"shap_base_{feature}"] = np.round(contribution).astype(int)
+
+    result = pd.DataFrame(shap_values)
+    result["shap_base_bias"] = np.round(coalition_values[0]).astype(int)
+    result["shap_base_sum"] = result["shap_base_bias"] + result[
+        [f"shap_base_{feature}" for feature in FEATURES]
+    ].sum(axis=1)
+    return result
+
+
+def run(
+    roster_path: str,
+    sideline_path: str,
+    output_path: str,
+    k: int = 5,
+    ea_path: str | None = None,
+    depth_path: str | None = None,
+    explain_output_path: str | None = None,
+):
     print("=" * 65)
     print("NIL PLAYER SIMILARITY MODEL v2")
     print("=" * 65)
@@ -369,6 +605,8 @@ def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5, ea_p
     roster = pd.read_csv(roster_path)
     ea = load_ea_ratings(ea_path or DEFAULT_EA_RATINGS)
     roster = attach_ea_ratings(roster, ea)
+    depth = load_depth_charts(depth_path or DEFAULT_DEPTH_CHARTS)
+    roster = attach_depth_charts(roster, depth)
     roster = ensure_depth_rank(roster)
     budgets = load_budgets(sideline_path)
     max_budget = max(budgets.values())
@@ -407,12 +645,32 @@ def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5, ea_p
     print(f"\n[4] Computing K={k} nearest neighbors...")
     knn = NearestNeighbors(n_neighbors=min(k, len(ANCHORS)), metric='cosine')
     knn.fit(X_anchors_sc)
-    estimates, lowers, uppers = estimate_nil(X_roster, X_anchors_sc, y_anchors, knn)
-    estimates = apply_ea_adjustment(estimates, roster)
-    estimates = apply_market_caps(estimates, roster)
-    estimates = apply_player_market_floors(estimates, roster)
+    base_estimates, lowers, uppers = estimate_nil(X_roster, X_anchors_sc, y_anchors, knn)
+    after_ea = apply_ea_adjustment(base_estimates, roster)
+    after_initial_cap = apply_market_caps(after_ea, roster)
+    after_depth = apply_depth_opportunity_adjustment(after_initial_cap, roster)
+    after_role_floor = apply_role_market_floors(after_depth, roster, budgets)
+    after_player_floor = apply_player_market_floors(after_role_floor, roster)
+    estimates = apply_market_caps(after_player_floor, roster)
     lowers = np.minimum(lowers, estimates)
     uppers = np.maximum(np.minimum(uppers, estimates * 2), estimates)
+    stage_df = pd.DataFrame({
+        "nil_base_similarity": base_estimates,
+        "nil_after_ea": after_ea,
+        "nil_after_initial_cap": after_initial_cap,
+        "nil_after_depth_opportunity": after_depth,
+        "nil_after_role_floor": after_role_floor,
+        "nil_after_player_floor": after_player_floor,
+        "nil_estimate": estimates,
+        "nil_delta_ea": after_ea - base_estimates,
+        "nil_delta_initial_cap": after_initial_cap - after_ea,
+        "nil_delta_depth_opportunity": after_depth - after_initial_cap,
+        "nil_delta_role_floor": after_role_floor - after_depth,
+        "nil_delta_player_floor": after_player_floor - after_role_floor,
+        "nil_delta_final_cap": estimates - after_player_floor,
+    })
+    neighbors_df = neighbor_explanations(X_roster, y_anchors, anchor_df, knn)
+    shap_df = local_feature_shap_values(feat_df, scaler, X_anchors_sc, y_anchors, knn)
 
     # Output
     print("\n[5] Building output...")
@@ -422,6 +680,12 @@ def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5, ea_p
                   'headshot', 'jersey']].copy()
     out = out.rename(columns={'display_name': 'player_name', 'position_group': 'pos_group'})
     for col in ["ea_ovr", "ea_spd", "ea_str", "ea_agi", "ea_awr", "ea_position", "ea_match"]:
+        out[col] = roster[col]
+    for col in [
+        "ourlads_match", "ourlads_depth_slot", "ourlads_position",
+        "ourlads_class_tag", "ourlads_is_transfer",
+        "ourlads_is_true_freshman", "ourlads_source_updated_at",
+    ]:
         out[col] = roster[col]
 
     out['nil_estimate']  = estimates
@@ -436,9 +700,28 @@ def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5, ea_p
         ) / max(POSITION_MARKET_RATE(r['position']), 1)),
         axis=1
     ).round(3)
+    for col in stage_df.columns:
+        if col != "nil_estimate":
+            out[col] = stage_df[col]
+    out = pd.concat([out, neighbors_df, shap_df], axis=1)
 
     out.to_csv(output_path, index=False)
     print(f"  Saved {len(out):,} player estimates → {output_path}")
+    if explain_output_path:
+        explain_cols = [
+            "player_name", "team", "position", "class", "depth_rank",
+            "ea_ovr", "ea_match", "ourlads_match", "ourlads_depth_slot",
+            "ourlads_position", "ourlads_is_transfer",
+            *[col for col in stage_df.columns if col != "nil_estimate"],
+            "nil_estimate",
+            "explain_neighbor_anchors", "explain_neighbor_values",
+            "explain_neighbor_weights",
+            "shap_base_bias",
+            *[f"shap_base_{feature}" for feature in FEATURES],
+            "shap_base_sum",
+        ]
+        out[explain_cols].to_csv(explain_output_path, index=False)
+        print(f"  Saved explainability report → {explain_output_path}")
 
     # Summary
     print("\n" + "=" * 65)
@@ -478,5 +761,9 @@ if __name__ == '__main__':
     p.add_argument('--k',        type=int, default=5)
     p.add_argument('--ea-ratings', default=str(DEFAULT_EA_RATINGS),
                    help='Optional EA/CFBLabs ratings CSV')
+    p.add_argument('--depth-charts', default=str(DEFAULT_DEPTH_CHARTS),
+                   help='Optional Ourlads depth chart CSV')
+    p.add_argument('--explain-output', default=None,
+                   help='Optional CSV with staged deltas and local feature attributions')
     a = p.parse_args()
-    run(a.roster, a.sideline, a.output, a.k, a.ea_ratings)
+    run(a.roster, a.sideline, a.output, a.k, a.ea_ratings, a.depth_charts, a.explain_output)

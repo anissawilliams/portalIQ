@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="200" y="30" font-family="Arial" font-size="22" font-weight="700" fill="#202124">Florida State NIL: Post-Model Rule Impact</text>
+<text x="188" y="82" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Player floor</text>
+<rect x="200" y="65" width="0.0" height="24" rx="3" fill="#8B5E34"/>
+<text x="208.0" y="83" font-family="Arial" font-size="14" fill="#333">$0</text>
+<text x="188" y="130" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Role floor</text>
+<rect x="200" y="113" width="8.0" height="24" rx="3" fill="#8B5E34"/>
+<text x="216.0" y="131" font-family="Arial" font-size="14" fill="#333">$1,642</text>
+<text x="188" y="178" text-anchor="end" font-family="Arial" font-size="15" fill="#333">EA rating</text>
+<rect x="200" y="161" width="99.1" height="24" rx="3" fill="#8B5E34"/>
+<text x="307.1" y="179" font-family="Arial" font-size="14" fill="#333">$20,277</text>
+<text x="188" y="226" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Final caps</text>
+<rect x="200" y="209" width="183.8" height="24" rx="3" fill="#8B5E34"/>
+<text x="391.8" y="227" font-family="Arial" font-size="14" fill="#333">$37,584</text>
+<text x="188" y="274" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Ourlads opportunity</text>
+<rect x="200" y="257" width="317.3" height="24" rx="3" fill="#8B5E34"/>
+<text x="525.3" y="275" font-family="Arial" font-size="14" fill="#333">$64,894</text>
+<text x="188" y="322" text-anchor="end" font-family="Arial" font-size="15" fill="#333">Initial caps</text>
+<rect x="200" y="305" width="650.0" height="24" rx="3" fill="#8B5E34"/>
+<text x="858.0" y="323" font-family="Arial" font-size="14" fill="#333">$132,940</text>
+</svg>

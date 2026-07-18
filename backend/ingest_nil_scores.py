@@ -43,6 +43,7 @@ if not SIDELINE_JSON.exists():
     SIDELINE_JSON = Path(__file__).parent / "sideline-nil-rankings.json"
 OUTPUT_CSV   = DATA_DIR / "nil_player_estimates_2026.csv"
 EA_RATINGS_CSV = Path(__file__).resolve().parents[1] / "scripts" / "data" / "ea_cf27_ratings.csv"
+DEPTH_CHARTS_CSV = Path(__file__).resolve().parents[1] / "scripts" / "data" / "ourlads_depth_charts.csv"
 SEASON       = 2026
 MODEL_VERSION = "v2"
 BATCH_SIZE   = 100
@@ -129,6 +130,7 @@ def run_model() -> pd.DataFrame:
         output_path=str(OUTPUT_CSV),
         k=5,
         ea_path=str(EA_RATINGS_CSV) if EA_RATINGS_CSV.exists() else None,
+        depth_path=str(DEPTH_CHARTS_CSV) if DEPTH_CHARTS_CSV.exists() else None,
     )
     return results
 
