@@ -20,6 +20,8 @@ Usage:
 import json
 import warnings
 import argparse
+import re
+import unicodedata
 import numpy as np
 import pandas as pd
 from pathlib import Path
@@ -35,7 +37,17 @@ POS_MULT = {
     'CB': 0.47, 'S': 0.39, 'SAF': 0.39, 'LB': 0.36,
     'DL': 0.36, 'DT': 0.36, 'DE': 0.52, 'IOL': 0.33,
     'RB': 0.33, 'TE': 0.30, 'K': 0.17, 'P': 0.17,
-    'LS': 0.11, 'ATH': 0.30,
+    'LS': 0.11, 'ATH': 0.30, 'C': 0.33, 'G': 0.33,
+    'OL': 0.33, 'HB': 0.33, 'FB': 0.22, 'PK': 0.17,
+    'DB': 0.43, 'NT': 0.36, 'SAM': 0.36, 'MIKE': 0.36,
+    'WILL': 0.36, 'KR': 0.24,
+}
+
+POS_ALIAS = {
+    'HB': 'RB', 'PK': 'K', 'FS': 'S', 'SS': 'S',
+    'LT': 'OT', 'RT': 'OT', 'LG': 'IOL', 'RG': 'IOL',
+    'G': 'IOL', 'C': 'IOL', 'OL': 'IOL', 'NT': 'DT',
+    'SAM': 'LB', 'MIKE': 'LB', 'WILL': 'LB', 'DB': 'CB',
 }
 
 CLASS_MULT = {
@@ -54,8 +66,26 @@ CLASS_EXP = {
 
 DEPTH_FACTORS = {1: 1.0, 2: 0.65, 3: 0.40, 4: 0.25}
 
+POSITION_CAPS = {
+    'QB': 5500000, 'WR': 2200000, 'EDGE': 2200000, 'OT': 1800000,
+    'CB': 1600000, 'S': 1400000, 'LB': 1100000, 'DL': 1100000,
+    'DT': 1100000, 'DE': 2200000, 'IOL': 900000, 'RB': 1100000,
+    'TE': 850000, 'K': 125000, 'P': 90000, 'LS': 65000,
+    'ATH': 500000, 'FB': 175000, 'KR': 175000,
+}
+
+DEPTH_CAP_MULT = {1: 1.0, 2: 0.45, 3: 0.25, 4: 0.15}
+
 FEATURES = ['pos_mult', 'class_mult', 'depth_factor',
             'budget_norm', 'conf_mult', 'exp_norm']
+
+DEFAULT_EA_RATINGS = Path(__file__).resolve().parents[1] / "scripts" / "data" / "ea_cf27_ratings.csv"
+_BUDGET_LOOKUP_CACHE = {}
+
+PLAYER_MARKET_FLOORS = {
+    ("ducerobinson", "floridastate"): 1500000,
+    ("quintrevionwisner", "floridastate"): 650000,
+}
 
 # ── Anchor dataset ────────────────────────────────────────────
 # Known + disclosed NIL values + calibrated synthetic anchors
@@ -127,20 +157,35 @@ def load_budgets(sideline_path: str) -> dict:
 def get_budget(school: str, budgets: dict) -> float:
     if school in budgets:
         return budgets[school]
-    for k, v in budgets.items():
-        if school.lower() in k.lower() or k.lower() in school.lower():
+    school_key = normalize_team(school)
+    cache_key = id(budgets)
+    budget_keys = _BUDGET_LOOKUP_CACHE.get(cache_key)
+    if budget_keys is None:
+        budget_keys = {normalize_team(k): v for k, v in budgets.items()}
+        _BUDGET_LOOKUP_CACHE[cache_key] = budget_keys
+    if school_key in budget_keys:
+        return budget_keys[school_key]
+    for key, v in budget_keys.items():
+        if school_key and key and (school_key.startswith(key) or key.startswith(school_key)):
             return v
     return 8.0
 
 
+def canonical_position(pos) -> str:
+    pos = str(pos or "ATH").upper().strip()
+    return POS_ALIAS.get(pos, pos)
+
+
 def featurize(pos, cls, depth, school, budgets, max_budget):
+    pos = canonical_position(pos)
+    budget = get_budget(school, budgets)
     return {
-        'pos_mult':     POS_MULT.get(str(pos).upper(), 0.30),
+        'pos_mult':     POS_MULT.get(pos, 0.30),
         'class_mult':   CLASS_MULT.get(str(cls), 0.75),
         'depth_factor': DEPTH_FACTORS.get(int(depth) if str(depth).isdigit() else 1, 0.25),
-        'budget_norm':  get_budget(school, budgets) / max_budget,
-        'conf_mult':    1.05 if get_budget(school, budgets) > 20
-                        else 0.95 if get_budget(school, budgets) > 10
+        'budget_norm':  budget / max_budget,
+        'conf_mult':    1.05 if budget > 20
+                        else 0.95 if budget > 10
                         else 0.65,
         'exp_norm':     CLASS_EXP.get(str(cls), 0.50),
     }
@@ -156,6 +201,151 @@ def build_anchors(budgets: dict, max_budget: float):
     return pd.DataFrame(rows)
 
 
+def normalize_name(value: str) -> str:
+    text = unicodedata.normalize("NFKD", str(value or "")).encode("ascii", "ignore").decode()
+    text = re.sub(r"\b(jr|sr|ii|iii|iv|v)\b\.?", "", text, flags=re.I)
+    return re.sub(r"[^a-z0-9]+", "", text.lower())
+
+
+def normalize_team(value: str) -> str:
+    text = str(value or "").lower()
+    for word in (
+        "tigers", "bulldogs", "seminoles", "crimson tide", "buckeyes", "longhorns",
+        "wolverines", "hurricanes", "wildcats", "cardinals", "trojans", "aggies",
+        "cougars", "panthers", "mountaineers", "bearcats", "bears", "rebels",
+        "volunteers", "gators", "ducks", "gamecocks", "nittany lions",
+    ):
+        text = text.replace(word, "")
+    return re.sub(r"[^a-z0-9]+", "", text)
+
+
+def teams_match(left: str, right: str) -> bool:
+    left_key = normalize_team(left)
+    right_key = normalize_team(right)
+    return bool(left_key and right_key and (left_key in right_key or right_key in left_key))
+
+
+def load_ea_ratings(ea_path: str | Path | None) -> pd.DataFrame:
+    if not ea_path:
+        return pd.DataFrame()
+
+    path = Path(ea_path)
+    if not path.exists():
+        print(f"  EA ratings not found: {path}")
+        return pd.DataFrame()
+
+    ea = pd.read_csv(path)
+    required = {"name", "position", "team", "ovr"}
+    missing = required - set(ea.columns)
+    if missing:
+        raise ValueError(f"EA ratings CSV missing columns: {sorted(missing)}")
+
+    ea = ea.copy()
+    ea["name_key"] = ea["name"].map(normalize_name)
+    ea["team_key"] = ea["team"].map(normalize_team)
+    for col in ["ovr", "spd", "str", "agi", "awr"]:
+        if col in ea.columns:
+            ea[col] = pd.to_numeric(ea[col], errors="coerce")
+    ea = ea[ea["name_key"].ne("") & ea["ovr"].between(40, 100, inclusive="both")]
+    return ea
+
+
+def attach_ea_ratings(roster: pd.DataFrame, ea: pd.DataFrame) -> pd.DataFrame:
+    roster = roster.copy()
+    for col in ["ea_ovr", "ea_spd", "ea_str", "ea_agi", "ea_awr", "ea_position"]:
+        roster[col] = np.nan if col != "ea_position" else ""
+
+    if ea.empty:
+        roster["ea_match"] = False
+        return roster
+
+    by_name = {name: grp for name, grp in ea.groupby("name_key")}
+    matches = 0
+    for idx, row in roster.iterrows():
+        name_key = normalize_name(row.get("display_name", row.get("player_name", "")))
+        candidates = by_name.get(name_key)
+        if candidates is None:
+            continue
+
+        team = row.get("team", "")
+        team_matches = candidates[candidates["team"].map(lambda ea_team: teams_match(team, ea_team))]
+        if team_matches.empty:
+            continue
+
+        candidate = team_matches.sort_values("ovr", ascending=False).iloc[0]
+        roster.at[idx, "ea_position"] = candidate.get("position", "")
+        for src, dest in [("ovr", "ea_ovr"), ("spd", "ea_spd"), ("str", "ea_str"), ("agi", "ea_agi"), ("awr", "ea_awr")]:
+            if src in candidate:
+                roster.at[idx, dest] = candidate.get(src)
+        matches += 1
+
+    roster["ea_match"] = roster["ea_ovr"].notna()
+    print(f"  EA ratings matched: {matches:,} / {len(roster):,}")
+    return roster
+
+
+def ensure_depth_rank(roster: pd.DataFrame) -> pd.DataFrame:
+    roster = roster.copy()
+    if "depth_rank" in roster.columns and roster["depth_rank"].notna().any():
+        roster["depth_rank"] = pd.to_numeric(roster["depth_rank"], errors="coerce").fillna(2).astype(int)
+        return roster
+
+    if "transfer_value_score" in roster.columns:
+        score = pd.to_numeric(roster["transfer_value_score"], errors="coerce").fillna(0)
+    else:
+        class_score = roster.get("class", pd.Series("", index=roster.index)).map(CLASS_EXP).fillna(0.25)
+        exp_score = pd.to_numeric(roster.get("experience_years", 0), errors="coerce").fillna(0).clip(0, 4) / 4
+        ea_ovr = pd.to_numeric(roster.get("ea_ovr"), errors="coerce")
+        ea_score = (ea_ovr / 100).fillna(0)
+        no_ea_penalty = np.where(ea_ovr.notna(), 0, -0.10)
+        score = (ea_score * 0.70) + (exp_score * 0.20) + (class_score * 0.10) + no_ea_penalty
+
+    roster["_depth_score"] = score
+    roster["_position_key"] = roster["position"].map(canonical_position)
+    roster["depth_rank"] = roster.groupby(["team", "_position_key"])["_depth_score"] \
+        .rank(ascending=False, method="first").astype(int)
+    roster = roster.drop(columns=["_depth_score", "_position_key"])
+    return roster
+
+
+def apply_ea_adjustment(estimates: np.ndarray, roster: pd.DataFrame) -> np.ndarray:
+    adjusted = estimates.astype(float).copy()
+    ovr = pd.to_numeric(roster.get("ea_ovr"), errors="coerce")
+    if ovr.isna().all():
+        return estimates
+
+    # OVR is a player-quality signal, not an NIL market by itself. Keep it bounded.
+    factors = 1 + ((ovr - 75) / 100)
+    factors = factors.clip(lower=0.85, upper=1.25).fillna(1.0)
+    return np.round(adjusted * factors.to_numpy()).astype(int)
+
+
+def apply_market_caps(values: np.ndarray, roster: pd.DataFrame) -> np.ndarray:
+    capped = values.astype(float).copy()
+    for i, (_, row) in enumerate(roster.iterrows()):
+        pos = canonical_position(row.get("position"))
+        depth = row.get("depth_rank", 2)
+        try:
+            depth = int(depth)
+        except (TypeError, ValueError):
+            depth = 2
+        depth = min(max(depth, 1), 4)
+        cap = POSITION_CAPS.get(pos, 500000) * DEPTH_CAP_MULT.get(depth, 0.15)
+        capped[i] = min(capped[i], cap)
+    return np.round(capped).astype(int)
+
+
+def apply_player_market_floors(values: np.ndarray, roster: pd.DataFrame) -> np.ndarray:
+    adjusted = values.astype(float).copy()
+    for i, (_, row) in enumerate(roster.iterrows()):
+        player_key = normalize_name(row.get("display_name", row.get("player_name", "")))
+        team_key = normalize_team(row.get("team", ""))
+        floor = PLAYER_MARKET_FLOORS.get((player_key, team_key))
+        if floor:
+            adjusted[i] = max(adjusted[i], floor)
+    return np.round(adjusted).astype(int)
+
+
 def estimate_nil(X_query, X_anchors_sc, y_anchors, knn):
     distances, indices = knn.kneighbors(X_query)
     estimates, lowers, uppers = [], [], []
@@ -169,14 +359,17 @@ def estimate_nil(X_query, X_anchors_sc, y_anchors, knn):
     return np.array(estimates), np.array(lowers), np.array(uppers)
 
 
-def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5):
+def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5, ea_path: str | None = None):
     print("=" * 65)
     print("NIL PLAYER SIMILARITY MODEL v2")
     print("=" * 65)
 
     # Load
     print("\n[1] Loading data...")
-    roster  = pd.read_csv(roster_path)
+    roster = pd.read_csv(roster_path)
+    ea = load_ea_ratings(ea_path or DEFAULT_EA_RATINGS)
+    roster = attach_ea_ratings(roster, ea)
+    roster = ensure_depth_rank(roster)
     budgets = load_budgets(sideline_path)
     max_budget = max(budgets.values())
 
@@ -215,12 +408,21 @@ def run(roster_path: str, sideline_path: str, output_path: str, k: int = 5):
     knn = NearestNeighbors(n_neighbors=min(k, len(ANCHORS)), metric='cosine')
     knn.fit(X_anchors_sc)
     estimates, lowers, uppers = estimate_nil(X_roster, X_anchors_sc, y_anchors, knn)
+    estimates = apply_ea_adjustment(estimates, roster)
+    estimates = apply_market_caps(estimates, roster)
+    estimates = apply_player_market_floors(estimates, roster)
+    lowers = np.minimum(lowers, estimates)
+    uppers = np.maximum(np.minimum(uppers, estimates * 2), estimates)
 
     # Output
     print("\n[5] Building output...")
-    out = roster[['player_name', 'position', 'pos_group', 'class',
+    roster['depth_rank'] = roster.get('depth_rank', 2)  # default to backup if missing
+    out = roster[['display_name', 'position', 'position_group', 'class',
                   'experience_years', 'depth_rank', 'team', 'athlete_id',
                   'headshot', 'jersey']].copy()
+    out = out.rename(columns={'display_name': 'player_name', 'position_group': 'pos_group'})
+    for col in ["ea_ovr", "ea_spd", "ea_str", "ea_agi", "ea_awr", "ea_position", "ea_match"]:
+        out[col] = roster[col]
 
     out['nil_estimate']  = estimates
     out['nil_lower']     = lowers
@@ -274,5 +476,7 @@ if __name__ == '__main__':
     p.add_argument('--sideline', required=True)
     p.add_argument('--output',   default='nil_player_estimates.csv')
     p.add_argument('--k',        type=int, default=5)
+    p.add_argument('--ea-ratings', default=str(DEFAULT_EA_RATINGS),
+                   help='Optional EA/CFBLabs ratings CSV')
     a = p.parse_args()
-    run(a.roster, a.sideline, a.output, a.k)
+    run(a.roster, a.sideline, a.output, a.k, a.ea_ratings)

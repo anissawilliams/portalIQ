@@ -23,3 +23,17 @@ backend/debug_route.py
 .idea/
 backend/test_auth.py
 roster_edge_class_paper.md
+data/sidearm_*_2026.csv
+data/cfb_rosters_2026_clean.csv
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files
+data/sidearm_*_2026.csv
+data/cfb_rosters_2026_clean.csv
+data/cfb_rosters_2026_model_input.csv
+data/nil_player_estimates_2026.csv
+
+# Environment
+.env

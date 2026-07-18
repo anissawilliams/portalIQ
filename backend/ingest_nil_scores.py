@@ -38,8 +38,11 @@ SUPABASE_URL = os.environ.get("SUPABASE_URL", "https://fpigpzmgqmzoxdknhetg.supa
 SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_KEY")
 DATA_DIR     = Path(__file__).parent / "data"
 ROSTER_CSV   = DATA_DIR / "cfb_rosters_2026_clean.csv"
-SIDELINE_JSON = Path(__file__).parent / "sideline-nil-rankings.json"
+SIDELINE_JSON = DATA_DIR / "sideline-nil-rankings.json"
+if not SIDELINE_JSON.exists():
+    SIDELINE_JSON = Path(__file__).parent / "sideline-nil-rankings.json"
 OUTPUT_CSV   = DATA_DIR / "nil_player_estimates_2026.csv"
+EA_RATINGS_CSV = Path(__file__).resolve().parents[1] / "scripts" / "data" / "ea_cf27_ratings.csv"
 SEASON       = 2026
 MODEL_VERSION = "v2"
 BATCH_SIZE   = 100
@@ -124,7 +127,8 @@ def run_model() -> pd.DataFrame:
         roster_path=str(tmp),
         sideline_path=str(SIDELINE_JSON),
         output_path=str(OUTPUT_CSV),
-        k=5
+        k=5,
+        ea_path=str(EA_RATINGS_CSV) if EA_RATINGS_CSV.exists() else None,
     )
     return results
 
