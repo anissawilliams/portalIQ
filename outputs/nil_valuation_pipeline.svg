@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">NIL valuation pipeline</title>
+  <desc id="desc">A seven-stage technical pipeline showing sources, identity resolution, feature building, anchor similarity, signal adjustment, guardrails, and explainable output.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0f2333" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#5f7687"/>
+    </marker>
+    <linearGradient id="stageGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f4f8fa"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #f3f6f8; }
+      .title { font-family: Inter, Avenir, Helvetica, Arial, sans-serif; font-size: 58px; font-weight: 760; fill: #172532; letter-spacing: 0; }
+      .subtitle { font-family: Inter, Avenir, Helvetica, Arial, sans-serif; font-size: 23px; font-weight: 520; fill: #587080; letter-spacing: 0; }
+      .stage { fill: url(#stageGrad); stroke: #d9e4e9; stroke-width: 2; rx: 18; filter: url(#shadow); }
+      .stage-title { font-family: Inter, Avenir, Helvetica, Arial, sans-serif; font-size: 25px; font-weight: 760; fill: #172532; letter-spacing: 0; }
+      .caption { font-family: Inter, Avenir, Helvetica, Arial, sans-serif; font-size: 17px; font-weight: 520; fill: #627887; letter-spacing: 0; }
+      .icon { fill: none; stroke: #0f8377; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .icon-fill { fill: #d8f1ed; stroke: #0f8377; stroke-width: 5; }
+      .arrow { stroke: #5f7687; stroke-width: 4; fill: none; marker-end: url(#arrow); }
+      .lane { fill: #ffffff; stroke: #dce7eb; stroke-width: 2; rx: 20; filter: url(#shadow); }
+      .lane-label { font-family: Inter, Avenir, Helvetica, Arial, sans-serif; font-size: 23px; font-weight: 760; fill: #0f8377; letter-spacing: 0; }
+      .lane-text { font-family: Inter, Avenir, Helvetica, Arial, sans-serif; font-size: 22px; font-weight: 520; fill: #394e5b; letter-spacing: 0; }
+      .chip { fill: #fff7e6; stroke: #edb13a; stroke-width: 2; rx: 15; }
+      .chip-text { font-family: Inter, Avenir, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; fill: #8b5e00; letter-spacing: 0; }
+      .rule { stroke: #d7e3e8; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <circle cx="1460" cy="115" r="74" fill="#e3f3f1"/>
+  <circle cx="1538" cy="178" r="24" fill="#fff0cf"/>
+  <circle cx="105" cy="760" r="42" fill="#e4eef4"/>
+
+  <text class="title" x="82" y="112">NIL valuation pipeline</text>
+  <text class="subtitle" x="86" y="154">From weak public signals to an auditable roster-level estimate</text>
+
+  <rect class="chip" x="1195" y="92" width="315" height="48"/>
+  <text class="chip-text" x="1220" y="123">Estimate + range + confidence</text>
+
+  <!-- Stage cards -->
+  <g transform="translate(70 270)">
+    <rect class="stage" x="0" y="0" width="188" height="210"/>
+    <ellipse class="icon-fill" cx="94" cy="50" rx="43" ry="15"/>
+    <path class="icon" d="M51 50v47c0 9 19 16 43 16s43-7 43-16V50"/>
+    <path class="icon" d="M51 74c0 9 19 16 43 16s43-7 43-16"/>
+    <text class="stage-title" x="94" y="139" text-anchor="middle">Sources</text>
+    <text class="caption" x="94" y="171" text-anchor="middle">Roster + EA</text>
+    <text class="caption" x="94" y="195" text-anchor="middle">Ourlads + benchmarks</text>
+  </g>
+
+  <path class="arrow" d="M268 375H316"/>
+
+  <g transform="translate(326 270)">
+    <rect class="stage" x="0" y="0" width="188" height="210"/>
+    <circle class="icon-fill" cx="72" cy="55" r="27"/>
+    <circle class="icon-fill" cx="116" cy="86" r="27"/>
+    <path class="icon" d="M91 70l16 11"/>
+    <path class="icon" d="M48 116c13-18 61-18 75 0"/>
+    <text class="stage-title" x="94" y="139" text-anchor="middle">Resolve identity</text>
+    <text class="caption" x="94" y="171" text-anchor="middle">player/team keys</text>
+    <text class="caption" x="94" y="195" text-anchor="middle">match method retained</text>
+  </g>
+
+  <path class="arrow" d="M524 375H572"/>
+
+  <g transform="translate(582 270)">
+    <rect class="stage" x="0" y="0" width="188" height="210"/>
+    <path class="icon" d="M55 46h78"/>
+    <path class="icon" d="M55 78h78"/>
+    <path class="icon" d="M55 110h78"/>
+    <circle class="icon-fill" cx="82" cy="46" r="10"/>
+    <circle class="icon-fill" cx="116" cy="78" r="10"/>
+    <circle class="icon-fill" cx="72" cy="110" r="10"/>
+    <text class="stage-title" x="94" y="139" text-anchor="middle">Build features</text>
+    <text class="caption" x="94" y="171" text-anchor="middle">position, class</text>
+    <text class="caption" x="94" y="195" text-anchor="middle">budget, role</text>
+  </g>
+
+  <path class="arrow" d="M780 375H828"/>
+
+  <g transform="translate(838 270)">
+    <rect class="stage" x="0" y="0" width="188" height="210"/>
+    <circle class="icon-fill" cx="63" cy="59" r="15"/>
+    <circle class="icon-fill" cx="117" cy="45" r="15"/>
+    <circle class="icon-fill" cx="129" cy="98" r="15"/>
+    <circle class="icon-fill" cx="78" cy="104" r="15"/>
+    <path class="icon" d="M76 55l28-7M76 72l39 20M91 101l24-2"/>
+    <text class="stage-title" x="94" y="139" text-anchor="middle">Anchor similarity</text>
+    <text class="caption" x="94" y="171" text-anchor="middle">nearest market</text>
+    <text class="caption" x="94" y="195" text-anchor="middle">anchors</text>
+  </g>
+
+  <path class="arrow" d="M1036 375H1084"/>
+
+  <g transform="translate(1094 270)">
+    <rect class="stage" x="0" y="0" width="188" height="210"/>
+    <path class="icon" d="M54 100c28-58 54-58 80 0"/>
+    <path class="icon" d="M54 100h80"/>
+    <path class="icon" d="M94 100V44"/>
+    <path class="icon" d="M82 56l12-12 12 12"/>
+    <text class="stage-title" x="94" y="139" text-anchor="middle">Adjust signals</text>
+    <text class="caption" x="94" y="171" text-anchor="middle">talent +</text>
+    <text class="caption" x="94" y="195" text-anchor="middle">opportunity</text>
+  </g>
+
+  <path class="arrow" d="M1292 375H1340"/>
+
+  <g transform="translate(1350 270)">
+    <rect class="stage" x="0" y="0" width="188" height="210"/>
+    <path class="icon-fill" d="M94 37l47 20v34c0 33-20 52-47 67-27-15-47-34-47-67V57z"/>
+    <path class="icon" d="M71 93l16 16 33-39"/>
+    <text class="stage-title" x="94" y="139" text-anchor="middle">Guardrails</text>
+    <text class="caption" x="94" y="171" text-anchor="middle">caps, floors</text>
+    <text class="caption" x="94" y="195" text-anchor="middle">ranges</text>
+  </g>
+
+  <!-- Output card below right, connected from guardrails -->
+  <path class="arrow" d="M1444 490v54"/>
+  <g transform="translate(1250 570)">
+    <rect class="stage" x="0" y="0" width="288" height="170"/>
+    <path class="icon" d="M70 51h63M70 80h92M70 109h54"/>
+    <path class="icon-fill" d="M185 43h46v68h-46z"/>
+    <path class="icon" d="M195 97l11-19 11 10 11-29"/>
+    <text class="stage-title" x="144" y="126" text-anchor="middle">Explain output</text>
+    <text class="caption" x="144" y="153" text-anchor="middle">estimate, confidence, drivers</text>
+  </g>
+
+  <!-- Audit trail lane -->
+  <g transform="translate(84 600)">
+    <rect class="lane" x="0" y="0" width="1038" height="112"/>
+    <text class="lane-label" x="36" y="47">Audit trail</text>
+    <line class="rule" x1="178" y1="27" x2="178" y2="84"/>
+    <text class="lane-text" x="210" y="47">source coverage • match method • rule deltas</text>
+    <text class="lane-text" x="210" y="80">benchmark version • confidence</text>
+  </g>
+
+  <path class="arrow" d="M1122 656H1232"/>
+
+  <text class="subtitle" x="86" y="815">Model contract: preserve lineage, expose assumptions, and avoid false point-price certainty.</text>
+</svg>
